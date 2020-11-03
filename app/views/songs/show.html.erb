@@ -2,3 +2,4 @@
 <p><%= @song.description %></p>
 <%= link_to "Back", songs_path %> |
 <%= link_to "Edit", edit_song_path %> |
+<%= link_to "Destroy", song_path, method: :delete, data: { confirm: "Are you sure?"} %>  
