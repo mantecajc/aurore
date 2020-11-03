@@ -55,3 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Needed for youtube videos
 gem 'youtube_id', '~> 0.1.0'
+
+# Needed for medias (soundcloud)
+gem 'media_embed'

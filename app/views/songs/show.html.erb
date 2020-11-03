@@ -1,8 +1,16 @@
 <h1><%= @song.title %></h1>
 <p><%= @song.description %></p>
 
-<iframe src="http://www.youtube.com/embed/<%= YoutubeID.from(@song.youtube_url) %>" frameborder="0" allowfullscreen></iframe>
-<!-- width="640" height="360" -->
+<p><%= embed(@song.soundcloud_url, { width: '640', height: '200' } ).html_safe %></p>
+
+<p><iframe width="640" height="360" src="http://www.youtube.com/embed/<%= YoutubeID.from(@song.youtube_url) %>" frameborder="0" allowfullscreen></iframe></p>
+<!-- 
+width="640" height="360" 
+
+<p><iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/829063375&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></p>
+-->
+
+
 
 <%= link_to "Back", songs_path %> |
 <%= link_to "Edit", edit_song_path %> |
