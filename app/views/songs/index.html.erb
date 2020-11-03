@@ -1,1 +1,6 @@
 <h1>Music Production</h1>
+
+<% @songs.each do |song| %>
+  <h2><%= song.title %></h2>
+  <p><%= song.description %></p>
+<% end %>
