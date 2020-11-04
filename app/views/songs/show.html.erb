@@ -1,11 +1,11 @@
 <h1><%= @song.title %></h1>
 <p><%= @song.description %></p>
 
-<p><%= embed(@song.soundcloud_url, { width: '640', height: '200' } ).html_safe %></p>
+<div><%= embed(@song.soundcloud_url, { width: '640', height: '200' } ).html_safe %></div>
 
-<%= @song.album_url.html_safe %>
+<div><%= @song.album_url.html_safe %></div>
 
-<p><iframe width="640" height="360" src="http://www.youtube.com/embed/<%= YoutubeID.from(@song.youtube_url) %>" frameborder="0" allowfullscreen></iframe></p>
+<div><iframe width="640" height="360" src="http://www.youtube.com/embed/<%= YoutubeID.from(@song.youtube_url) %>" frameborder="0" allowfullscreen></iframe></div>
 
 <%= link_to "Back", songs_path %> |
 <%= link_to "Edit", edit_song_path %> |
