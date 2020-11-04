@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_03_151433) do
+ActiveRecord::Schema.define(version: 2020_11_04_144239) do
 
   create_table "songs", force: :cascade do |t|
     t.string "title"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_11_03_151433) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "youtube_url"
     t.string "soundcloud_url"
+    t.string "album_url"
   end
 
 end

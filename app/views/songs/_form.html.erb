@@ -1,4 +1,16 @@
 <%= form_for @song do |f| %>
+
+  <% if @song.errors.any? %>
+    <div>
+      <h2><%= pluralize(@song.errors.count, "error") %> prohibited this post from being saved:</h2>
+      <ul>
+        <% @song.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
@@ -12,6 +24,11 @@
   <p>
     <%= f.label :link_soundcloud %><br>
     <%= f.text_field :soundcloud_url %>
+  </p>
+
+  <p>
+    <%= f.label :link_album %><br>
+    <%= f.text_field :album_url %>  
   </p>
 
   <p>
