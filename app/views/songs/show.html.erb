@@ -1,0 +1,29 @@
+
+<h1><%= @song.title %></h1>
+<p><%= @song.description %></p>
+
+<div><%= embed(@song.soundcloud_url, { width: '640', height: '200' } ).html_safe %></div>
+
+<div><%= @song.album_url.html_safe %></div>
+
+<div><iframe width="640" height="360" src="http://www.youtube.com/embed/<%= YoutubeID.from(@song.youtube_url) %>" frameborder="0" allowfullscreen></iframe></div>
+
+<%= link_to "Back", songs_path %> |
+<%= link_to "Edit", edit_song_path %> |
+<%= link_to "Delete", song_path, method: :delete, data: { confirm: "Are you sure?"} %>  
+
+<div>
+  <% if @song.previous %>
+    <%= link_to @song.previous, :action => 'go' do %>
+      <i class="fas fa-caret-left"></i>
+      <%= @song.previous.title %>  
+    <% end %>
+  <% end %>
+  |
+  <% if @song.next %>
+    <%= link_to @song.next, :action => 'go' do %>
+      <%= @song.next.title %>
+      <i class="fas fa-caret-right"></i>
+    <% end %>
+  <% end %>
+</div>
