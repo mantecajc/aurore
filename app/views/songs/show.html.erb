@@ -14,10 +14,16 @@
 
 <div>
   <% if @song.previous %>
-    <%= link_to @song.previous.title, @song.previous %>
+    <%= link_to @song.previous, :action => 'go' do %>
+      <i class="fas fa-caret-left"></i>
+      <%= @song.previous.title %>  
+    <% end %>
   <% end %>
   |
   <% if @song.next %>
-    <%= link_to @song.next.title, @song.next %>
+    <%= link_to @song.next, :action => 'go' do %>
+      <%= @song.next.title %>
+      <i class="fas fa-caret-right"></i>
+    <% end %>
   <% end %>
 </div>

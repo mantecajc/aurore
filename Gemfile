@@ -59,4 +59,8 @@ gem 'youtube_id', '~> 0.1.0'
 # Needed for medias (soundcloud)
 gem 'media_embed'
 
+# Needed for form_for
 gem 'actiontext', '~> 6.0', '>= 6.0.3.4'
+
+# Needed for icons
+gem "font-awesome-rails"
