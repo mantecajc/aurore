@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -58,3 +58,5 @@ gem 'youtube_id', '~> 0.1.0'
 
 # Needed for medias (soundcloud)
 gem 'media_embed'
+
+gem 'actiontext', '~> 6.0', '>= 6.0.3.4'

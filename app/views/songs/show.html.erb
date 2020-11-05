@@ -1,3 +1,4 @@
+
 <h1><%= @song.title %></h1>
 <p><%= @song.description %></p>
 
@@ -11,5 +12,12 @@
 <%= link_to "Edit", edit_song_path %> |
 <%= link_to "Delete", song_path, method: :delete, data: { confirm: "Are you sure?"} %>  
 
-
-
+<div>
+  <% if @song.previous %>
+    <%= link_to @song.previous.title, @song.previous %>
+  <% end %>
+  |
+  <% if @song.next %>
+    <%= link_to @song.next.title, @song.next %>
+  <% end %>
+</div>
