@@ -41,6 +41,6 @@ class SoundDesignsController < ApplicationController
 
   private
     def sound_design_params
-      params.require(:sound_design).permit(:title, :description)
+      params.require(:sound_design).permit(:title, :description, :image)
     end
 end

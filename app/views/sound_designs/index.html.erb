@@ -1,6 +1,10 @@
 <h1>Music / Sound Design for Advertising</h1>
 
+<div><%= link_to 'Add a new post', sound_designs_new_path %></div>
+
 <% @sound_designs.each do |sound_design| %>
+  <% if sound_design.image.attached? %>
+    <div><%= image_tag sound_design.image %></div>
+  <% end %>
   <h2><%= link_to sound_design.title, sound_design %></h2>
-  <div><%= sound_design.description %></div>
 <% end %>
