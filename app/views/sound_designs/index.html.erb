@@ -1,0 +1,6 @@
+<h1>Music / Sound Design for Advertising</h1>
+
+<% @sound_designs.each do |sound_design| %>
+  <h2><%= link_to sound_design.title, sound_design %></h2>
+  <div><%= sound_design.description %></div>
+<% end %>

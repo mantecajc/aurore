@@ -1,0 +1,2 @@
+class SoundDesign < ApplicationRecord
+end
