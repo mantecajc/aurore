@@ -11,6 +11,29 @@
   </head>
 
   <body>
+    <div class="header">
+      <div class="logo">
+        <%= image_tag("laurore.jpg") %>
+      </div>
+
+      <!-- If you need to inclue the link_to into a div 
+      https://stackoverflow.com/questions/30639767/how-can-we-add-link-to-with-a-div-in-rails 
+      -->
+
+      <div class="navbar">
+        <%= link_to "L'Aurore", root_path %>
+        <%= link_to "Music Production", songs_path %>
+        <%= link_to "Music / Sound Design for Advertising", "#" %>
+        <%= link_to "Studio", studio_path %>
+        <%= link_to "Contact", contact_path %>
+      </div>
+
+      <div class="social">
+        <a href="https://www.facebook.com/AuLabelAurore"  target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/label.aurore/"><i class="fab fa-instagram"></i></a>
+        <a href="https://vimeo.com/user98874758"><i class="fab fa-vimeo-v"></i></a>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
