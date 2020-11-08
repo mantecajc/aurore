@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  background-color: darkgreen;
+  height: 180px;
+}
+
+.logo-box {
+  background: ;
+  width: 40%;
+}
+
+.style_logo {
+  margin: 40px 0px 0px 30px;
+  width: 360px;
+  height: 135px; 
+}
+
+
+
+.navbar {
+  width: 40%;
+}
+
+.social {
+  width: 20%;
+}
