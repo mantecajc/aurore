@@ -14,25 +14,36 @@
   <body>
     <div class="header">
       <div class="logo-box">
-          <%= image_tag("laurore.jpg", :class => "style_logo") %>
+          <%= link_to image_tag("laurore.jpg", :class => "style_logo"), root_path, active: :exact %>
       </div>
 
       <!-- If you need to inclue the link_to into a div 
       https://stackoverflow.com/questions/30639767/how-can-we-add-link-to-with-a-div-in-rails 
       -->
+    
 
       <div class="navbar">
-        <%= link_to "L'Aurore", root_path %>
-        <%= link_to "Music Production", songs_path %>
-        <%= link_to "Music / Sound Design for Advertising", "#" %>
-        <%= link_to "Studio", studio_path %>
-        <%= link_to "Contact", contact_path %>
+        <div class="nav-link">
+          <%= active_link_to "L'Aurore", root_path, active: :exact, :class => "menu_button" %>
+        </div>
+        <div class="nav-link">
+          <%= active_link_to "Music Production", songs_path, :class => "menu_button" %>
+        </div>
+        <div class="nav-link">
+          <%= active_link_to "Music / Sound Design for Advertising", "#", :class => "menu_button" %>
+        </div>
+        <div class="nav-link">
+          <%= active_link_to "Studio", studio_path, :class => "menu_button" %>
+        </div>
+        <div class="nav-link" id="last-nav-link">
+          <%= active_link_to "Contact", contact_path, :class => "menu_button" %>
+        </div>
       </div>
 
       <div class="social">
-        <a href="https://www.facebook.com/AuLabelAurore"  target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/label.aurore/"><i class="fab fa-instagram"></i></a>
-        <a href="https://vimeo.com/user98874758"><i class="fab fa-vimeo-v"></i></a>
+        <a href="https://www.facebook.com/AuLabelAurore"  target="_blank" class="social_icons"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/label.aurore/" target="_blank" class="social_icons"><i class="fab fa-instagram"></i></a>
+        <a href="https://vimeo.com/user98874758" target="_blank" class="social_icons"><i class="fab fa-vimeo-v"></i></a>
       </div>
     </div>
     <%= yield %>

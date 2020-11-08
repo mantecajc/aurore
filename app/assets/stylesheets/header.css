@@ -1,26 +1,72 @@
 .header {
   display: flex;
-  background-color: darkgreen;
+  background-color: ;
   height: 180px;
+  align-items: center;
 }
 
+/* Logo box */
+
 .logo-box {
+  display: flex;
+  justify-content: center;
   background: ;
-  width: 40%;
+  width: 32%;
 }
 
 .style_logo {
-  margin: 40px 0px 0px 30px;
   width: 360px;
   height: 135px; 
 }
 
 
+/* Nav-bar links */
 
 .navbar {
-  width: 40%;
+  width: 58%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: ;
 }
 
+.nav-link {
+  margin: 0 25px 0 0;
+}
+
+.menu_button {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 1.10rem;
+  padding-bottom: 3px;
+  border-bottom: solid 1.9px white;
+  transition: all ease 0.5s;
+}
+
+.menu_button:hover {
+  border-bottom: solid 1.9px black;
+}
+
+.active {
+  border-bottom: solid 1.9px black;
+}
+
+/* Social nav-bar */
+
 .social {
-  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  width: 10%;
+}
+
+.social_icons {
+  margin: 0 25px 0 0;
+  color: black;
+  font-size: 1.15rem;
+  transition: all ease 0.5s;
+}
+
+.social_icons:hover {
+  color: red;
 }

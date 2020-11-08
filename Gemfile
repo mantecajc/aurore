@@ -64,3 +64,6 @@ gem 'actiontext', '~> 6.0', '>= 6.0.3.4'
 
 # Needed for icons
 gem "font-awesome-rails"
+
+# Needed for links
+gem 'active_link_to', '~> 1.0', '>= 1.0.5'
