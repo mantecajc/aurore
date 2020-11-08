@@ -37,8 +37,8 @@
 .menu_button {
   text-decoration: none;
   color: black;
-  font-weight: 300;
-  font-size: 1.10rem;
+  font-weight: 400;
+  font-size: 1rem;
   padding-bottom: 3px;
   border-bottom: solid 1.9px white;
   transition: all ease 0.5s;
@@ -51,6 +51,7 @@
 .active {
   border-bottom: solid 1.9px black;
 }
+
 
 /* Social nav-bar */
 
