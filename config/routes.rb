@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get "studio" => "studio#index" 
+
+  get "contact" => "contact#index"
   
 end
