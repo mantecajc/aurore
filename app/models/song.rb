@@ -11,4 +11,7 @@ class Song < ApplicationRecord
     Song.where(["id > ?", id]).first
   end
 
+  has_many :iframes, dependent: :destroy
+
+  accepts_nested_attributes_for :iframes, reject_if: :all_blank, allow_destroy: true
 end

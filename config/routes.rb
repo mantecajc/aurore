@@ -8,13 +8,9 @@ Rails.application.routes.draw do
   post '/sound-designs' => 'sound_designs#create'
   get '/sound-designs/:id' => 'sound_designs#show', as: 'sound_design'
   get '/sound-designs/:id/edit' => 'sound_designs#edit', as: 'sound_design_edit'
-  
-
   patch '/sound-designs/:id' => 'sound_designs#update'
   put '/sound-designs/:id' => 'sound_designs#update'
   delete '/sound-designs/:id' => 'sound_designs#destroy'
-
-  root 'home#index'
 
   get "studio" => "studio#index" 
 

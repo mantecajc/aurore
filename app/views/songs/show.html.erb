@@ -2,11 +2,11 @@
 <h1><%= @song.title %></h1>
 <p><%= @song.description %></p>
 
-<div><%= embed(@song.soundcloud_url, { width: '640', height: '200' } ).html_safe %></div>
-
-<div><%= @song.album_url.html_safe %></div>
-
-<div><iframe width="640" height="360" src="http://www.youtube.com/embed/<%= YoutubeID.from(@song.youtube_url) %>" frameborder="0" allowfullscreen></iframe></div>
+<% @song.iframes.each do |iframe| %>
+  <p>
+    <%= iframe.iframe_url.html_safe %>
+  </p>
+<% end %>
 
 <%= link_to "Back", songs_path %> |
 <%= link_to "Edit", edit_song_path %> |
