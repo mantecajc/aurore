@@ -32,19 +32,12 @@
   </p>
 
   <p>
-    <%= f.label :link_soundcloud %><br>
-    <%= f.text_field :soundcloud_url %>
+    <%= f.fields_for :iframes do |f| %>
+        <%= render 'iframe_fields', f: f %>
+    <% end %>
+    <%= link_to_add_fields "Add another iframe", f, :iframes %>
   </p>
 
-  <p>
-    <%= f.label :link_album %><br>
-    <%= f.text_field :album_url %>  
-  </p>
-
-  <p>
-    <%= f.label :link_youtube %><br>
-    <%= f.text_field :youtube_url %>
-  </p>
 
   <p>
     <%= f.submit "Save" %>
@@ -52,3 +45,22 @@
 <% end %>
 
 <%= link_to 'Cancel', songs_path %>
+
+<script>
+
+  $('form').on('click', '.remove_fields', function(event) {
+    $(this).prev('input[type=hidden]').val('1');
+    $(this).closest('.iframe_links').hide();
+    return event.preventDefault();
+  });
+
+  $('form').on('click', '.add_fields', function(event) {
+    console.log('clicked!')
+      var regexp, time;
+      time = new Date().getTime();
+      regexp = new RegExp($(this).data('id'), 'g');
+      $(this).before($(this).data('fields').replace(regexp, time));
+      return event.preventDefault();
+  });
+
+</script>
