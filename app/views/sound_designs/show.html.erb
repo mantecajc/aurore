@@ -1,0 +1,12 @@
+<h1><%= @sound_design.title %></h1>
+<p><%= @sound_design.description %></p>
+
+<% @sound_design.vimeos.each do |vimeo| %>
+  <p>
+    <%= vimeo.vimeo_url.html_safe %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', sound_designs_path %> | 
+<%= link_to 'Edit', sound_design_edit_path %> |
+<%= link_to 'Delete', sound_design_path, method: :delete, data: { confirm: 'Are you sure?'} %>
