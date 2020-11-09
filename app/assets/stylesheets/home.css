@@ -1,0 +1,34 @@
+.index_home_studio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.small_description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 676px;
+  margin-bottom: 35px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.main_index_image {
+  width: 676px;
+  height: 451px;
+  margin-bottom: 55px;
+}
+
+.long_description {
+  display: flex;
+  width: 676px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22pt;
+}
