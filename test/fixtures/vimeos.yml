@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vimeo_url: MyString
+  sound_design_id: 1
+
+two:
+  vimeo_url: MyString
+  sound_design_id: 1

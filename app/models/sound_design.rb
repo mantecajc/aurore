@@ -11,4 +11,8 @@ class SoundDesign < ApplicationRecord
   def next
     SoundDesign.where(['id > ?', id]).first
   end
+
+  has_many :vimeos, dependent: :destroy
+
+  accepts_nested_attributes_for :vimeos, reject_if: :all_blank, allow_destroy: true
 end

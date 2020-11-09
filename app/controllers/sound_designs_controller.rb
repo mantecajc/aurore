@@ -5,6 +5,7 @@ class SoundDesignsController < ApplicationController
 
   def new
     @sound_design = SoundDesign.new
+    @sound_design.vimeos.build
   end
 
   def create
@@ -41,6 +42,6 @@ class SoundDesignsController < ApplicationController
 
   private
     def sound_design_params
-      params.require(:sound_design).permit(:title, :description, :image)
+      params.require(:sound_design).permit(:title, :description, :image, vimeos_attributes: [:id, :vimeo_url, :_destroy])
     end
 end
