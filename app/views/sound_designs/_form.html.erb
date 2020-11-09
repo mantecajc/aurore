@@ -4,7 +4,7 @@
     <div>
       <h2><%= pluralize(@sound_design.errors.count, "error") %> prohibited this post from being saved:</h2>
       <ul>
-        <% @song.errors.full_messages.each do |msg| %>
+        <% @sound_design.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
       </ul>

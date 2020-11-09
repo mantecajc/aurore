@@ -5,6 +5,7 @@ class SongsController < ApplicationController
   
   def new
     @song = Song.new
+    @song.iframes.build
   end
 
   def create
@@ -41,6 +42,6 @@ class SongsController < ApplicationController
 
   private
     def song_params
-      params.require(:song).permit(:title, :description, :youtube_url, :soundcloud_url, :album_url, :image)
+      params.require(:song).permit(:title, :description, :youtube_url, :soundcloud_url, :album_url, :image, iframes_attributes: [:id, :iframe_url, :_destroy])
     end
 end
