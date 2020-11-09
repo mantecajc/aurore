@@ -1,12 +1,10 @@
-<h1>New Music Production</h1>
-
-<%= form_for @song do |f| %>
-
-  <% if @song.errors.any? %>
+<%= form_for @sound_design do |f| %>
+  
+  <% if @sound_design.errors.any? %>
     <div>
-      <h2><%= pluralize(@song.errors.count, "error") %> prohibited this post from being saved:</h2>
+      <h2><%= pluralize(@sound_design.errors.count, "error") %> prohibited this post from being saved:</h2>
       <ul>
-        <% @song.errors.full_messages.each do |msg| %>
+        <% @sound_design.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
       </ul>
@@ -19,38 +17,38 @@
   </p>
 
   <p>
-    <%= f.label :description%><br>
+    <%= f.label :description %><br>
     <%= f.rich_text_area :description %>
   </p>
 
   <p>
-    <% if @song.image.attached? %>
-      <%= image_tag @song.image, style: "width: 200px; display: block" %>
+    <% if @sound_design.image.attached? %>
+      <%= image_tag @sound_design.image, style: "width: 200px; display: block" %>
     <% end %>
     <%= f.label :image %><br>
     <%= f.file_field :image %>
   </p>
 
   <p>
-    <%= f.fields_for :iframes do |f| %>
-        <%= render 'iframe_fields', f: f %>
+    <%= f.fields_for :vimeos do |f| %>
+        <%= render 'vimeo_fields', f: f %>
     <% end %>
-    <%= link_to_add_fields "Add another iframe", f, :iframes %>
+    <%= link_to_add_fields "Add another iframe", f, :vimeos %>
   </p>
-
 
   <p>
     <%= f.submit "Save" %>
   </p>
 <% end %>
 
-<%= link_to 'Cancel', songs_path %>
+<%= link_to 'Cancel', sound_designs_path %>
+
 
 <script>
 
   $('form').on('click', '.remove_fields', function(event) {
     $(this).prev('input[type=hidden]').val('1');
-    $(this).closest('.iframe_links').hide();
+    $(this).closest('.vimeo_links').hide();
     return event.preventDefault();
   });
 

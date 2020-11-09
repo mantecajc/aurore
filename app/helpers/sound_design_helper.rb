@@ -1,4 +1,4 @@
-module SongsHelper
+module SoundDesignHelper
   def link_to_add_fields(name, f, association)
     ## create a new object from the association (:product_variants)
     new_object = f.object.send(association).klass.new
@@ -13,6 +13,5 @@ module SongsHelper
 
     ## pass down the link to the fields form
     link_to(name, '#', class: 'add_fields', data: {id: id, fields: fields.gsub("\n", "")})
-
   end
 end
