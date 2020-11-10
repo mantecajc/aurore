@@ -1,4 +1,3 @@
-
 <h1><%= @song.title %></h1>
 <p><%= @song.description %></p>
 
@@ -13,17 +12,21 @@
 <%= link_to "Delete", song_path, method: :delete, data: { confirm: "Are you sure?"} %>  
 
 <div>
-  <% if @song.previous %>
-    <%= link_to @song.previous, :action => 'go' do %>
-      <i class="fas fa-caret-left"></i>
-      <%= @song.previous.title %>  
+  <div>
+    <% if @song.previous %>
+      <%= link_to @song.previous, :action => 'go' do %>
+        <i class="fas fa-caret-left"></i>
+        <%= @song.previous.title %>  
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
   |
-  <% if @song.next %>
-    <%= link_to @song.next, :action => 'go' do %>
-      <%= @song.next.title %>
-      <i class="fas fa-caret-right"></i>
+  <div>
+    <% if @song.next %>
+      <%= link_to @song.next, :action => 'go' do %>
+        <%= @song.next.title %>
+        <i class="fas fa-caret-right"></i>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>

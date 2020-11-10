@@ -10,3 +10,23 @@
 <%= link_to 'Back', sound_designs_path %> | 
 <%= link_to 'Edit', sound_design_edit_path %> |
 <%= link_to 'Delete', sound_design_path, method: :delete, data: { confirm: 'Are you sure?'} %>
+
+<div>
+  <div>
+    <% if @sound_design.previous %>
+      <%= link_to @sound_design.previous, :action => 'go' do %>
+        <i class="fas fa-caret-left"></i>
+        <%= @sound_design.previous.title %>
+      <% end %>
+    <% end %>
+  </div>
+  |
+  <div>
+    <% if @sound_design.next %>
+      <%= link_to @sound_design.next, :action => 'go' do %>
+        <%= @sound_design.next.title %>
+        <i class="fas fa-caret-right"></i>
+      <% end %>
+    <% end %>
+  </div>
+</div>

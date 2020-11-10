@@ -1,5 +1,5 @@
 <h1 class="title">Music Production</h1>
-<%= link_to "Add a new post", new_song_path %>
+<div><%= link_to "Add a new post", new_song_path %></div>
 
 <% @songs.each do |song| %>
   <% if song.image.attached? %>
