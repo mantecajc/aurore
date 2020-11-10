@@ -34,7 +34,7 @@ body {
 
 .post-item-wrapper {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: transparent;
   transition: 0.4s;
 }
@@ -62,7 +62,7 @@ body {
 
 .subtitle-box {
   display: flex;
-  margin-top: 6px;
+  margin-top: 20px;
   justify-content: center;
 
 }
@@ -70,8 +70,8 @@ body {
 .subtitle {
   text-decoration: none;
   color: black;
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
   transition: 0.4s;
 }
 
