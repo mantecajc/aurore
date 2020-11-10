@@ -19,3 +19,59 @@
   font-family: 'Open Sans', sans-serif;
   /* font-weight: 300; */
 }
+
+body {
+  margin: 30px;
+}
+
+/* Post stylesheet */
+
+.post-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.post-item-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  color: transparent;
+  transition: 0.4s;
+}
+
+.post-item-wrapper:hover .post-img {
+  filter: opacity(75%);
+}
+
+/* If you want to put an animation to the subtile */
+.post-item-wrapper:hover .subtitle {
+  color: ;
+}
+
+.post-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+  transition: 0.4s;
+}
+
+.post-img:hover {
+  
+}
+
+.subtitle-box {
+  display: flex;
+  margin-top: 6px;
+  justify-content: center;
+
+}
+
+.subtitle {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: 0.4s;
+}
+

@@ -1,10 +1,14 @@
-<h1 class="title">Music / Sound Design for Advertising</h1>
-
 <div><%= link_to 'Add a new post', sound_designs_new_path %></div>
 
-<% @sound_designs.each do |sound_design| %>
-  <% if sound_design.image.attached? %>
-    <div><%= link_to image_tag(sound_design.image), sound_design %></div>
+<div class="post-items-wrapper">
+  <% @sound_designs.each do |sound_design| %>
+
+    <div class="post-item-wrapper">
+      <% if sound_design.image.attached? %>
+        <div class="post-img"><%= link_to image_tag(sound_design.image, style: 'height: 426.2px; width: 426.2px;'), sound_design %></div>
+      <% end %>
+      <h2 class="subtitle-box"><%= link_to sound_design.title, sound_design, :class => "subtitle" %></h2>
+    </div>
+
   <% end %>
-  <h2><%= link_to sound_design.title, sound_design %></h2>
-<% end %>
+</div>

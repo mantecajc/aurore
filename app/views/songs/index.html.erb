@@ -1,9 +1,11 @@
 <h1 class="title">Music Production</h1>
 <div><%= link_to "Add a new post", new_song_path %></div>
 
-<% @songs.each do |song| %>
-  <% if song.image.attached? %>
-    <div><%=link_to image_tag(song.image), song %></div>
+<div class="post">
+  <% @songs.each do |song| %>
+    <% if song.image.attached? %>
+      <div><%=link_to image_tag(song.image), song, :class => "image_post" %></div>
+    <% end %>
+    <h2><%= link_to song.title, song %></h2>
   <% end %>
-  <h2><%= link_to song.title, song %></h2>
-<% end %>
+</div>
