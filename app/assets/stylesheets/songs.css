@@ -24,6 +24,11 @@
   /* background: darkgreen; */
 }
 
+#iframe-item iframe {
+  width: 760px !important;
+  height: 515px !important;
+}
+
 .iframe-wrapper-advertising {
   display: flex;
   flex-direction: column;
