@@ -43,7 +43,9 @@
   border-radius: 0.3rem;
   cursor: pointer;
   font-weight: 600;
+  font-size: 0.9rem;
   transition: all ease 0.5s;
+  text-decoration: none;
 }
 
 .button-item:hover {
