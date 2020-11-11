@@ -27,6 +27,7 @@ body {
 /* Index stylesheet */
 
 .post-items-wrapper {
+  margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
@@ -72,3 +73,27 @@ body {
   transition: 0.4s;
 }
 
+/* Add new post */
+
+.add-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.add-button {
+  padding: 8px 25px 8px 25px;
+  color: white;
+  background: #006DCB;
+  border: solid 1.5px white;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all ease 0.5s;
+  text-decoration: none;
+}
+
+.add-button:hover {
+  color: #006DCB;
+  background-color: white;
+  border: solid 1.5px #006DCB;
+}
