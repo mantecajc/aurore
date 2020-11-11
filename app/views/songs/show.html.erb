@@ -1,29 +1,38 @@
+<h1 class="title"><%= @song.title %></h1>
+<div class="description">
+  <%= @song.description %>
+</div>
 
-<h1><%= @song.title %></h1>
-<p><%= @song.description %></p>
-
-<% @song.iframes.each do |iframe| %>
-  <p>
-    <%= iframe.iframe_url.html_safe %>
-  </p>
-<% end %>
-
-<%= link_to "Back", songs_path %> |
-<%= link_to "Edit", edit_song_path %> |
-<%= link_to "Delete", song_path, method: :delete, data: { confirm: "Are you sure?"} %>  
-
-<div>
-  <% if @song.previous %>
-    <%= link_to @song.previous, :action => 'go' do %>
-      <i class="fas fa-caret-left"></i>
-      <%= @song.previous.title %>  
-    <% end %>
+<div class="iframe-wrapper">
+  <% @song.iframes.each do |iframe| %>
+    <div id="iframe-item">
+      <%= iframe.iframe_url.html_safe %>
+    </div>
   <% end %>
-  |
-  <% if @song.next %>
-    <%= link_to @song.next, :action => 'go' do %>
-      <%= @song.next.title %>
-      <i class="fas fa-caret-right"></i>
+</div>
+
+<div class="command-wrapper">
+  <%= link_to "Back", songs_path, :class => "button-item" %>
+  <%= link_to "Edit", edit_song_path, :class => "button-item" %>
+  <%= link_to "Delete", song_path, :class => "button-item", :id => "button-item-delete", method: :delete, data: { confirm: "Are you sure?"} %>  
+</div>
+
+<div class="prev-next-wrapper">
+  <div class="prev">
+    <% if @song.previous %>
+      <%= link_to @song.previous, :class => "pn-link", :action => 'go' do %>
+        <i class="fas fa-chevron-left"></i>
+        <%= @song.previous.title %>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
+  
+  <div class="next">
+    <% if @song.next %>
+      <%= link_to @song.next, :class => "pn-link", :action => 'go' do %>
+        <%= @song.next.title %>
+        <i class="fas fa-chevron-right"></i>
+      <% end %>
+    <% end %>
+  </div>
 </div>

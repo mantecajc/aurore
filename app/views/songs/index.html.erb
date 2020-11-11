@@ -1,9 +1,13 @@
-<h1 class="title">Music Production</h1>
-<%= link_to "Add a new post", new_song_path %>
+<div><%= link_to "Add a new post", new_song_path %></div>
 
-<% @songs.each do |song| %>
-  <% if song.image.attached? %>
-    <div><%=link_to image_tag(song.image), song %></div>
+<div class="post-items-wrapper">
+  <% @songs.each do |song| %>
+
+    <div class="post-item-wrapper">
+      <% if song.image.attached? %>
+        <div class="post-img"><%=link_to image_tag(song.image, style: 'height: 426.2px; width: 426.2px;'), song %></div>
+      <% end %>
+      <h2 class="subtitle-box"><%= link_to song.title, song, :class => "subtitle" %></h2>
+    </div>
   <% end %>
-  <h2><%= link_to song.title, song %></h2>
-<% end %>
+</div>

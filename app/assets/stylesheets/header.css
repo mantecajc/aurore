@@ -9,9 +9,9 @@
 
 .logo-box {
   display: flex;
-  justify-content: center;
   background: ;
   width: 32%;
+  padding-left: 25px;
 }
 
 .style_logo {

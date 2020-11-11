@@ -1,12 +1,36 @@
-<h1><%= @sound_design.title %></h1>
-<p><%= @sound_design.description %></p>
+<h1 class="title"><%= @sound_design.title %></h1>
+<div class="description"><%= @sound_design.description %></div>
 
-<% @sound_design.vimeos.each do |vimeo| %>
-  <p>
-    <%= vimeo.vimeo_url.html_safe %>
-  </p>
-<% end %>
+<div class="iframe-wrapper-advertising">
+  <% @sound_design.vimeos.each do |vimeo| %>
+    <div id="iframe-item-advertising">
+      <%= vimeo.vimeo_url.html_safe %>
+    </div>
+  <% end %>
+</div>
 
-<%= link_to 'Back', sound_designs_path %> | 
-<%= link_to 'Edit', sound_design_edit_path %> |
-<%= link_to 'Delete', sound_design_path, method: :delete, data: { confirm: 'Are you sure?'} %>
+<div class="command-wrapper">
+  <%= link_to 'Back', sound_designs_path, :class => "button-item" %> 
+  <%= link_to 'Edit', sound_design_edit_path, :class => "button-item" %>
+  <%= link_to 'Delete', sound_design_path, :class => "button-item", :id => "button-item-delete", method: :delete, data: { confirm: 'Are you sure?'} %>
+</div>
+
+<div class="prev-next-wrapper">
+  <div class="prev">
+    <% if @sound_design.previous %>
+      <%= link_to @sound_design.previous, :class => "pn-link", :action => 'go' do %>
+        <i class="fas fa-chevron-left"></i>
+        <%= @sound_design.previous.title %>
+      <% end %>
+    <% end %>
+  </div>
+  
+  <div class="next">
+    <% if @sound_design.next %>
+      <%= link_to @sound_design.next, :class => "pn-link", :action => 'go' do %>
+        <%= @sound_design.next.title %>
+        <i class="fas fa-chevron-right"></i>
+      <% end %>
+    <% end %>
+  </div>
+</div>
