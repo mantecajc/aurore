@@ -49,9 +49,6 @@ body {
 }
 
 .post-img {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: transparent;
   transition: 0.4s;
 }

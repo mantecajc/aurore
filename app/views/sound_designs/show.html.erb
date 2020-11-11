@@ -1,9 +1,9 @@
 <h1 class="title"><%= @sound_design.title %></h1>
 <div class="description"><%= @sound_design.description %></div>
 
-<div class="iframe-wrapper">
+<div class="iframe-wrapper-advertising">
   <% @sound_design.vimeos.each do |vimeo| %>
-    <div id="iframe-item">
+    <div id="iframe-item-advertising">
       <%= vimeo.vimeo_url.html_safe %>
     </div>
   <% end %>

@@ -24,6 +24,23 @@
   /* background: darkgreen; */
 }
 
+.iframe-wrapper-advertising {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 0 0;
+}
+
+#iframe-item-advertising {
+  margin: 20px 0 40px 0;  
+}
+
+#iframe-item-advertising iframe {
+  width: 949px !important;
+  height: 505px !important;
+}
+
+
 /* Command-wrapper */
 
 .command-wrapper {
@@ -41,7 +58,6 @@
   background: #006DCB;
   border: solid 1.5px white;
   border-radius: 0.3rem;
-  cursor: pointer;
   font-weight: 600;
   font-size: 0.9rem;
   transition: all ease 0.5s;
