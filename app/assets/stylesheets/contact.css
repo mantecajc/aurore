@@ -8,3 +8,114 @@
 .alert-danger{
   color: red;
 }
+
+.new-form {
+  display: flex;
+}
+
+.contact-form {
+  margin: 40px 0 0 40px;
+  width: 50%;
+}
+
+.contact-item {
+  display: flex;
+  height: 40px;
+}
+
+.label-item {
+  width: 22%;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.text-item {
+  height: 27px;
+  width: 78%;
+}
+
+.message-item {
+  display: flex;
+}
+
+.text-message-item {
+  height: 200px;
+  width: 78%;
+}
+
+.submit-item {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-button {
+  background-color: #253651;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+  font-weight: 400;
+  font-size: 0.9rem;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #515E75;
+}
+
+/* Contact details */
+
+.contact-details {
+
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.expertise-detail {
+  width: 500px;
+}
+
+.expertise-detail h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.expertise-detail h4 {
+  display: flex;
+  justify-content: center;
+}
+
+.email-detail {
+  width: 500px;
+}
+
+.email-detail p {
+  display: flex;
+  justify-content: center;
+}
+
+.email-detail h4 {
+  display: flex;
+  justify-content: center;
+}
+
+
+.phone-detail {
+  width: 500px;
+}
+
+.phone-detail p {
+  display: flex;
+  justify-content: center;
+}
+
+.phone-detail h4 {
+  display: flex;
+  justify-content: center;
+}
+
+
