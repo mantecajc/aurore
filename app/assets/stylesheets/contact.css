@@ -41,6 +41,7 @@
 .text-message-item {
   height: 200px;
   width: 78%;
+
 }
 
 .submit-item {
@@ -67,7 +68,6 @@
 /* Contact details */
 
 .contact-details {
-
   display: flex;
   flex-direction: column;
   width: 50%;
