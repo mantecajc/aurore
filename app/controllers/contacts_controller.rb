@@ -7,11 +7,9 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.save
       NotifierMailer.notify_user(@contact).deliver
-      flash[:notice] = "Message sent! Thank you for contacting us."
-      redirect_to root_path
+      redirect_to root_path, notice: "Message sent! Thank you for contacting us."
     else
-      flash.now[:error] = 'Cannot send message'
-      render :new
+      render :new, alert: "Cannot send message"
     end
   end
 

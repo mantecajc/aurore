@@ -1,3 +1,10 @@
 /* The nickname attribute will be hidden so that no one can fill it out but computers will fill it out. This will determine whether the message is coming from a computer or not. */
 
 .hidden { display: none; }
+
+.alert-success{
+  color: green;
+}
+.alert-danger{
+  color: red;
+}
