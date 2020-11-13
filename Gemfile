@@ -67,3 +67,6 @@ gem "font-awesome-rails"
 
 # Needed for links
 gem 'active_link_to', '~> 1.0', '>= 1.0.5'
+
+# Needed for passwords & action_mailer
+gem 'figaro', '~> 1.2'

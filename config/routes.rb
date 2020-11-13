@@ -14,7 +14,8 @@ Rails.application.routes.draw do
 
   get "studio" => "studio#index" 
 
-  get "contact" => "contact#index"
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
   
 end
 

@@ -1,0 +1,29 @@
+<%= form_for @contact do |f| %>
+    <% if flash[:error].present? %>
+        <p>flash[:error]</p>
+    <% end %>
+    <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name, required: true %>
+    </p>
+    <p>
+        <%= f.label :last_name %><br>
+        <%= f.text_field :last_name, required: true %>
+    </p>
+    <p>
+        <%= f.label :email %><br>
+        <%= f.text_field :email, required: true %>
+    </p>
+    <p>
+        <%= f.label :subject %><br>
+        <%= f.text_field :subject, required: true %>
+    </p>
+    <p>
+        <%= f.label :message %><br>
+        <%= f.text_area :message, as: :text %>
+    </p>
+
+    <p>
+        <%= f.submit 'Send Message' %>
+    </p>
+<% end %>
