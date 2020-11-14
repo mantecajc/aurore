@@ -1,0 +1,199 @@
+/* The nickname attribute will be hidden so that no one can fill it out but computers will fill it out. This will determine whether the message is coming from a computer or not. */
+
+.hidden { display: none; }
+
+.alert-success{
+  color: green;
+}
+.alert-danger{
+  color: red;
+}
+
+.new-form {
+  display: flex;
+  margin-top: ;
+  background: ;
+}
+
+.contact-form {
+  margin: 0 50px 0 0;
+  /* width: 60%; */
+  width: 50%;
+  background: ;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 30px;
+  width: 40%;
+  align-items: center;
+  background: ;
+}
+
+.contact-item-wrap {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 30px;
+  background: ;
+  justify-content: space-between;
+}
+
+.contact-item-name-left {
+  display: ;
+  width: 48%;
+}
+
+
+.contact-item-name-right {
+  display: ;
+  width: 48%;
+}
+
+.text-item-left {
+  height: 30px;
+  width: 100%;
+  background-color: #EEEEEE;
+  border: none;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+.text-item-left::placeholder {
+
+}
+
+.text-item-right::placeholder {
+
+}
+
+.text-item-right {
+  height: 30px;
+  width: 100%;
+  background-color: #EEEEEE;
+  border: none;
+  margin-top: 5px;
+  padding-left: 10px;
+  /* solid 1px grey */
+}
+
+.contact-item {
+  display: ;
+  height: 40px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.label-item {
+  width: 22%;
+  
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: ;
+}
+
+.text-item {
+  height: 30px;
+  width: 100%;
+  /* width: 78% */
+  background-color: #EEEEEE;
+  border: none;
+  margin-top: 5px;
+  padding-left: 10px;
+  /* solid 1px grey */
+}
+
+.text-item::placeholder {
+  
+}
+
+.message-item {
+  display: ;
+}
+
+.text-message-item {
+  height: 200px;
+  width: 100%;
+  /* width: 78%; */
+  background-color: #EEEEEE;
+  border: none;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  /* solid 1px grey */
+}
+
+.text-message-item::placeholder {
+
+}
+
+.submit-item {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.submit-button {
+  background-color: #253651;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+  font-weight: 400;
+  font-size: 0.9rem;
+  transition: all ease 0.5s;
+  cursor: pointer;
+
+}
+
+.submit-button:hover {
+  background-color: #515E75;
+}
+
+/* Contact details */
+
+.expertise-detail {
+  width: 500px;
+}
+
+.expertise-detail h1 {
+  display: flex;
+  justify-content: ;
+}
+
+.expertise-detail h5 {
+  display: flex;
+  justify-content: ;
+}
+
+.email-detail {
+  width: 500px;
+}
+
+.email-detail p {
+  display: flex;
+  justify-content: ;
+}
+
+.email-detail h4 {
+  display: flex;
+  justify-content: ;
+}
+
+
+.phone-detail {
+  width: 500px;
+}
+
+.phone-detail p {
+  display: flex;
+  justify-content: ;
+}
+
+.phone-detail h4 {
+  display: flex;
+  justify-content: ;
+}
+
+
