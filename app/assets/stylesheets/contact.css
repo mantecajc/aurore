@@ -11,42 +11,127 @@
 
 .new-form {
   display: flex;
+  margin-top: ;
+  background: ;
 }
 
 .contact-form {
-  margin: 40px 0 0 40px;
+  margin: 0 50px 0 0;
+  /* width: 60%; */
   width: 50%;
+  background: ;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 30px;
+  width: 40%;
+  align-items: center;
+  background: ;
+}
+
+.contact-item-wrap {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 30px;
+  background: ;
+  justify-content: space-between;
+}
+
+.contact-item-name-left {
+  display: ;
+  width: 48%;
+}
+
+
+.contact-item-name-right {
+  display: ;
+  width: 48%;
+}
+
+.text-item-left {
+  height: 30px;
+  width: 100%;
+  background-color: #EEEEEE;
+  border: none;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+.text-item-left::placeholder {
+
+}
+
+.text-item-right::placeholder {
+
+}
+
+.text-item-right {
+  height: 30px;
+  width: 100%;
+  background-color: #EEEEEE;
+  border: none;
+  margin-top: 5px;
+  padding-left: 10px;
+  /* solid 1px grey */
 }
 
 .contact-item {
-  display: flex;
+  display: ;
   height: 40px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .label-item {
   width: 22%;
+  
   font-weight: 400;
   font-size: 0.9rem;
+  display: ;
 }
 
 .text-item {
-  height: 27px;
-  width: 78%;
+  height: 30px;
+  width: 100%;
+  /* width: 78% */
+  background-color: #EEEEEE;
+  border: none;
+  margin-top: 5px;
+  padding-left: 10px;
+  /* solid 1px grey */
+}
+
+.text-item::placeholder {
+  
 }
 
 .message-item {
-  display: flex;
+  display: ;
 }
 
 .text-message-item {
   height: 200px;
-  width: 78%;
+  width: 100%;
+  /* width: 78%; */
+  background-color: #EEEEEE;
+  border: none;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  /* solid 1px grey */
+}
+
+.text-message-item::placeholder {
 
 }
 
 .submit-item {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+
 }
 
 .submit-button {
@@ -59,6 +144,7 @@
   font-size: 0.9rem;
   transition: all ease 0.5s;
   cursor: pointer;
+
 }
 
 .submit-button:hover {
@@ -67,26 +153,18 @@
 
 /* Contact details */
 
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-}
-
 .expertise-detail {
   width: 500px;
 }
 
 .expertise-detail h1 {
   display: flex;
-  justify-content: center;
+  justify-content: ;
 }
 
-.expertise-detail h4 {
+.expertise-detail h5 {
   display: flex;
-  justify-content: center;
+  justify-content: ;
 }
 
 .email-detail {
@@ -95,12 +173,12 @@
 
 .email-detail p {
   display: flex;
-  justify-content: center;
+  justify-content: ;
 }
 
 .email-detail h4 {
   display: flex;
-  justify-content: center;
+  justify-content: ;
 }
 
 
@@ -110,12 +188,12 @@
 
 .phone-detail p {
   display: flex;
-  justify-content: center;
+  justify-content: ;
 }
 
 .phone-detail h4 {
   display: flex;
-  justify-content: center;
+  justify-content: ;
 }
 
 

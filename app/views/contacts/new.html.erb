@@ -1,18 +1,40 @@
 <div class="new-form">
+    <div class="contact-details">
+        <!--
+        <div class="expertise-detail">
+            <h4>Areas of Expertise</h4>
+            <h1>Music Production</h1>
+            <h1>Post Sound Production</h1>
+            <h1>Sound Design</h1>
+            <h1>Mixing / Mastering</h1>
+        </div>
+        -->
+        <div class="email-detail">
+            <h5>EMAIL</h5>
+            <p>jeff@labelaurore.fr</p>
+        </div>
+        <div class="phone-detail">
+            <h5>PHONE</h5>
+            <p>+33 (0)6 29 47 95 03</p>
+            <p>+44 (0)7 541 648 359</p>
+        </div>
+    </div>
     <div class="contact-form">
         <%= form_for @contact do |f| %>
             <% if flash[:error].present? %>
                 <p>flash[:error]</p>
             <% end %>
-            <h4 class="contact-item">Send an email</h4>
-            <p class="contact-item">
-                <%= f.label :name, 'Name *', :class => 'label-item' %>
-                <%= f.text_field :name, required: true, :class =>'text-item' %>
-            </p>
-            <p class="contact-item">
-                <%= f.label :last_name, :class => 'label-item' %>
-                <%= f.text_field :last_name, :class =>'text-item' %>
-            </p>
+            <h5 class="contact-item-title">GET IN TOUCH</h4>
+            <div class="contact-item-wrap">
+                <div class="contact-item-name-left">
+                    <%= f.label :name, 'Name *', :class => 'label-item' %>
+                    <%= f.text_field :name, required: true, :class =>'text-item-left' %>
+                </div>
+                <div class="contact-item-name-right">
+                    <%= f.label :last_name, :class => 'label-item' %>
+                    <%= f.text_field :last_name, :class =>'text-item-right' %>
+                </div>
+            </div>
             <p class="contact-item">
                 <%= f.label :email, 'Email Adresse *', :class => 'label-item' %>
                 <%= f.text_field :email, required: true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :class =>'text-item' %>
@@ -35,22 +57,5 @@
         <% end %>
     </div>
 
-    <div class="contact-details">
-        <div class="expertise-detail">
-            <h4>Areas of Expertise</h4>
-            <h1>Music Production</h1>
-            <h1>Post Sound Production</h1>
-            <h1>Sound Design</h1>
-            <h1>Mixing / Mastering</h1>
-        </div>
-        <div class="email-detail">
-            <h4>Email</h4>
-            <p>jeff@labelaurore.fr</p>
-        </div>
-        <div class="phone-detail">
-            <h4>Phone</h4>
-            <p>+33 (0)6 29 47 95 03</p>
-            <p>+44 (0)7 541 648 359</p>
-        </div>
-    </div>
+
 </div>
