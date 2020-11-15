@@ -1,3 +1,7 @@
+<% if user_signed_in? %>
+  <div class="add-wrapper"><%= link_to 'New Sound Design', sound_designs_new_path, :class => "add-button" %></div>
+<% end %>
+
 <div class="post-items-wrapper">
   <% @sound_designs.each do |sound_design| %>
 
@@ -10,6 +14,3 @@
   <% end %>
 </div>
 
-<% if user_signed_in? %>
-  <div class="add-wrapper"><%= link_to 'Add a new post', sound_designs_new_path, :class => "add-button" %></div>
-<% end %>

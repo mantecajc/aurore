@@ -59,14 +59,14 @@
         <p class="alert alert-danger"><%= alert %></p>
       <% end %>
     </div>
-    
-    <%= yield %>
 
-    <div>
+    <div class="sign-out-wrap">
       <% if user_signed_in? %>
-        <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+        <%= link_to "Sign Out", destroy_user_session_path, :method => :delete, :class => "sign-out-button" %>
       <% end %>
     </div>
+
+    <%= yield %>
 
     <footer>
       <div class="social-footer">

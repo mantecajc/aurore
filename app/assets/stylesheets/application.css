@@ -77,7 +77,8 @@ body {
 
 .add-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  margin: 5px 40px 0 40px;
 }
 
 .add-button {
@@ -96,4 +97,30 @@ body {
   color: #006DCB;
   background-color: white;
   border: solid 1.5px #006DCB;
+}
+
+/* Sign out button */
+
+.sign-out-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 40px 0 40px;
+}
+
+.sign-out-button {
+  border: solid 1.5px white;
+  padding: 8px 25px 8px 25px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: ease all 0.5s;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.sign-out-button:hover {
+  color: red;
+  background: white;
+  border: solid 1.5px red;
 }
