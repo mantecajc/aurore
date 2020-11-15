@@ -62,6 +62,12 @@
     
     <%= yield %>
 
+    <div>
+      <% if user_signed_in? %>
+        <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+      <% end %>
+    </div>
+
     <footer>
       <div class="social-footer">
         <a href="https://www.facebook.com/AuLabelAurore"  target="_blank" class="social_icons_footer"><i class="fab fa-facebook-f"></i></a>

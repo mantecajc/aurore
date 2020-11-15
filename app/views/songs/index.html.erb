@@ -10,4 +10,6 @@
   <% end %>
 </div>
 
-<div class="add-wrapper"><%= link_to "Add a new post", new_song_path, :class => "add-button" %></div>
+<% if user_signed_in? %>
+  <div class="add-wrapper"><%= link_to "Add a new post", new_song_path, :class => "add-button" %></div>
+<% end %>

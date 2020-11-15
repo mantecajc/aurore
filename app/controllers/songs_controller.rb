@@ -1,4 +1,6 @@
 class SongsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
+  
   def index
     @songs = Song.all.order("created_at DESC")
   end
