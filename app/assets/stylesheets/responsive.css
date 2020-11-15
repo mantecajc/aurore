@@ -1,0 +1,100 @@
+
+@media only screen and (max-width: 1289px) {
+
+  /* Header */
+  .social {
+    display: none;
+  }
+
+  .navbar {
+    width: 68%;
+  }
+}
+
+
+
+@media only screen and (max-width: 1147px) {
+
+
+
+  /* Header */
+  .navbar {
+    display: none;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  /* Home & studio index */
+  .main_index_image {
+    width: 60%;
+  }
+
+  .long_description {
+    width: 60%;
+  }
+
+  .small_description_studio {
+    width: 60% !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .post-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+}
+
+
+@media only screen and (max-width: 762px) {
+
+  body {
+    margin: 0px 0px 0px 0px !important;
+  }
+
+  /* Home & studio index */
+  .main_index_image {
+    width: 90%;
+  }
+
+  .long_description {
+    width: 90%;
+  }
+
+  .small_description_studio {
+    width: 90% !important;
+  }
+
+  /* Song index */
+
+  .post-items-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
+
+@media only screen and (max-width: 499px) {
+
+  body {
+    margin: 0px 0px 0px 0px !important;
+  }
+
+  /* Home & studio index */
+  .main_index_image {
+    
+  }
+
+  body {
+    font-size: 120%;
+  }
+
+}
+
+
+
+
