@@ -70,3 +70,6 @@ gem 'active_link_to', '~> 1.0', '>= 1.0.5'
 
 # Needed for passwords & action_mailer
 gem 'figaro', '~> 1.2'
+
+# Needed for devise
+gem 'devise', '~> 4.7', '>= 4.7.3'

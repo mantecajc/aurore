@@ -9,11 +9,13 @@
   <% end %>
 </div>
 
-<div class="command-wrapper">
-  <%= link_to 'Back', sound_designs_path, :class => "button-item" %> 
-  <%= link_to 'Edit', sound_design_edit_path, :class => "button-item" %>
-  <%= link_to 'Delete', sound_design_path, :class => "button-item", :id => "button-item-delete", method: :delete, data: { confirm: 'Are you sure?'} %>
-</div>
+<% if user_signed_in? %>
+  <div class="command-wrapper">
+    <%= link_to 'Back', sound_designs_path, :class => "button-item" %> 
+    <%= link_to 'Edit', sound_design_edit_path, :class => "button-item" %>
+    <%= link_to 'Delete', sound_design_path, :class => "button-item", :id => "button-item-delete", method: :delete, data: { confirm: 'Are you sure?'} %>
+  </div>
+<% end %>
 
 <div class="prev-next-wrapper">
   <div class="prev">

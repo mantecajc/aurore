@@ -1,3 +1,6 @@
+<% if user_signed_in? %>
+  <div class="add-wrapper"><%= link_to "New Music Production", new_song_path, :class => "add-button" %></div>
+<% end %>
 <div class="post-items-wrapper">
   <% @songs.each do |song| %>
 
@@ -10,4 +13,3 @@
   <% end %>
 </div>
 
-<div class="add-wrapper"><%= link_to "Add a new post", new_song_path, :class => "add-button" %></div>
