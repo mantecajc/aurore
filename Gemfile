@@ -73,3 +73,5 @@ gem 'figaro', '~> 1.2'
 
 # Needed for devise
 gem 'devise', '~> 4.7', '>= 4.7.3'
+
+

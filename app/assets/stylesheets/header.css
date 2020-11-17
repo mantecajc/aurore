@@ -3,6 +3,7 @@
   background-color: ;
   height: 180px;
   align-items: center;
+  z-index: 30;
 }
 
 /* Logo box */
