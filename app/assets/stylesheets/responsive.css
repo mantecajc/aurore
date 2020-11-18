@@ -76,6 +76,22 @@
     width: 70%;
   }
 
+  #iframe-item {
+    padding: 0 0 0 0 !important;
+  } 
+
+  #iframe-item iframe {
+    width: 660px !important;
+    height: 415px !important;
+  }
+
+  #iframe-item-advertising {
+  }
+
+  #iframe-item-advertising iframe {
+    width: 660px !important;
+    height: 415px !important;
+  } 
 }
 
 
@@ -121,14 +137,34 @@
     width: 90% !important;
   }
 
-  /* Song index */
+  /*************** Song index **************/
 
   .post-items-wrapper {
     display: flex !important;
     flex-direction: column !important;
   }
 
-  /* New form */
+  #iframe-item {
+    padding: 0 0 0 0 !important;
+  } 
+
+  #iframe-item iframe {
+    width: 460px !important;
+    height: 315px !important;
+  }
+
+  /*************** Advertising index ************/
+
+  #iframe-item-advertising {
+  }
+
+  #iframe-item-advertising iframe {
+    width: 460px !important;
+    height: 315px !important;
+  } 
+
+  /*************** New form ***************/
+
   .new-form {
     margin: 0 40px 0 30px;
     flex-direction: column-reverse;
