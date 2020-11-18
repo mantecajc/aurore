@@ -317,6 +317,14 @@ ion-icon {
   display: block;
 }
 
+#hamburger-sidebar {
+  overflow: scroll;
+}
+
+#hamburger-overlay {
+  display: none !important;
+}
+
 #hamburger-sidebar-header {
   background: white;
   height: 180px;
@@ -326,7 +334,7 @@ ion-icon {
 }
 
 #hamburger-sidebar-body {
-  height: 1500px;
+  height: 450px;
   padding: 16px 8px;
   background-color: white;
 }
