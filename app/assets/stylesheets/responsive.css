@@ -16,7 +16,6 @@
 @media only screen and (max-width: 1147px) {
 
 
-
   /* Header */
   .navbar {
     display: none;
@@ -181,6 +180,21 @@
     justify-content: center;
   }
 
+  .contact-item-wrap {
+    flex-direction: column;
+    height: 110px;
+  }
+
+  .contact-item-name-left {
+    width: 100%;
+    height: 40px;
+  }
+
+  .contact-item-name-right {
+    width: 100%;
+    height: 40px;
+  }
+
   .email-detail {
     width: 100%;
   }
@@ -342,6 +356,7 @@ ion-icon {
   font-weight: 600;
   font-size: 1.5rem;
   transition: all ease 0.5s;
+  text-align: center;
 }
 
 .burger_button:hover {
