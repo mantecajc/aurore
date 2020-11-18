@@ -6,7 +6,7 @@
 
     <div class="post-item-wrapper">
       <% if song.image.attached? %>
-        <div class="post-img"><%=link_to image_tag(song.image, style: 'height: 426.2px; width: 426.2px;'), song %></div>
+        <div class="post-img"><%=link_to image_tag(song.image, style: 'width: 89%'), song %></div>
       <% end %>
       <h2 class="subtitle-box"><%= link_to song.title, song, :class => "subtitle" %></h2>
     </div>

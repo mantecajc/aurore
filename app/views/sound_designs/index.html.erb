@@ -7,7 +7,7 @@
 
     <div class="post-item-wrapper">
       <% if sound_design.image.attached? %>
-        <div class="post-img"><%= link_to image_tag(sound_design.image, style: 'height: 431.2px; width: 431.2px;'), sound_design %></div>
+        <div class="post-img"><%= link_to image_tag(sound_design.image, style: 'width: 89%'), sound_design %></div>
       <% end %>
       <h2 class="subtitle-box"><%= link_to sound_design.title, sound_design, :class => "subtitle" %></h2>
     </div>

@@ -23,14 +23,15 @@
 }
 
 .main_index_image {
-  width: 676px;
-  height: 451px;
+  width: 50%;
+  /* width: 676px; */
+  /* height: 451px; */
   margin-bottom: 55px;
 }
 
 .long_description {
   display: flex;
-  width: 676px;
+  width: 50%;
   font-weight: 400;
   font-size: 1rem;
   line-height: 22pt;

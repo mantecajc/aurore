@@ -23,11 +23,11 @@
 }
 
 .contact-details {
+  background: ;
   display: flex;
   flex-direction: column;
   margin: 0 0 0 30px;
   width: 40%;
-  align-items: center;
   background: ;
 }
 
@@ -167,23 +167,15 @@
   justify-content: ;
 }
 
-.email-detail {
-  width: 500px;
-}
 
 .email-detail p {
   display: flex;
   justify-content: ;
 }
 
-.email-detail h4 {
+.email-detail h5 {
   display: flex;
   justify-content: ;
-}
-
-
-.phone-detail {
-  width: 500px;
 }
 
 .phone-detail p {
@@ -191,7 +183,7 @@
   justify-content: ;
 }
 
-.phone-detail h4 {
+.phone-detail h5 {
   display: flex;
   justify-content: ;
 }

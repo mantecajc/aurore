@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/65fb5af6ee.js" crossorigin="anonymous"></script>
+
+
   </head>
 
   <body>
@@ -49,6 +51,44 @@
         <a href="https://www.instagram.com/label.aurore/" target="_blank" class="social_icons"><i class="fab fa-instagram"></i></a>
         <a href="https://vimeo.com/user98874758" target="_blank" class="social_icons"><i class="fab fa-vimeo-v"></i></a>
       </div>
+      <div id="hamburger">
+        <button id="hamburger-button"><ion-icon name="menu-outline"></ion-icon></button>
+
+        <div id="hamburger-sidebar">
+
+          <div id="hamburger-sidebar-header">
+            <div class="logo-box-burger">
+              <%= link_to image_tag("laurore.jpg", :class => "style-logo-burger"), root_path, active: :exact %>
+            </div>
+            <button id="hamburger-button-closed"><ion-icon name="close-outline" id="closed-burger"></ion-icon></button>
+          </div>
+
+          <div id="hamburger-sidebar-body">
+            <div class="nav-link-burger">
+              <%= link_to "L'Aurore", root_path, :class => "burger_button" %>
+            </div>
+            <div class="nav-link-burger">
+              <%= link_to "Music Production", songs_path, :class => "burger_button" %>
+            </div>
+            <div class="nav-link-burger">
+              <%= link_to "Music / Sound Design for Advertising", sound_designs_path, :class => "burger_button" %>
+            </div>
+            <div class="nav-link-burger">
+              <%= link_to "Studio", studio_path, :class => "burger_button" %>
+            </div>
+            <div class="nav-link-burger" id="last-nav-link-burger">
+              <%= link_to "Contact", new_contact_path, :class => "burger_button" %>
+            </div>
+            <div class="social-footer-burger">
+              <a href="https://www.facebook.com/AuLabelAurore"  target="_blank" class="social_icons_footer"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/label.aurore/" target="_blank" class="social_icons_footer"><i class="fab fa-instagram"></i></a>
+              <a href="https://vimeo.com/user98874758" target="_blank" class="social_icons_footer" id="social_icons_footer_right"><i class="fab fa-vimeo-v"></i></a>
+            </div>
+          </div>
+
+        </div>
+        <div id="hamburger-overlay"></div>
+      </div>
     </div>
 
     <div class="flash-messages">
@@ -79,4 +119,6 @@
       </div>
     </footer>
   </body>
+  <%= javascript_pack_tag 'hamburger' %>
 </html>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>

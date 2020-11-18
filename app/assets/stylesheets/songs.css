@@ -25,8 +25,8 @@
 }
 
 #iframe-item iframe {
-  width: 760px !important;
-  height: 515px !important;
+  width: 760px;
+  height: 515px;
 }
 
 .iframe-wrapper-advertising {
@@ -41,8 +41,8 @@
 }
 
 #iframe-item-advertising iframe {
-  width: 949px !important;
-  height: 505px !important;
+  width: 949px;
+  height: 505px;
 }
 
 

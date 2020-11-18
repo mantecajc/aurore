@@ -34,7 +34,9 @@ body {
 }
 
 .post-item-wrapper {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin-bottom: 40px;
   color: transparent;
   transition: 0.4s;
@@ -45,6 +47,7 @@ body {
 }
 
 /* If you want to put an animation to the subtile */
+
 .post-item-wrapper:hover .subtitle {
   color: ;
 }
@@ -124,3 +127,6 @@ body {
   background: white;
   border: solid 1.5px red;
 }
+
+
+
