@@ -255,6 +255,22 @@
 }
 
 
+@media only screen and (max-width: 400px) {
+
+/*************** Song & advertising index ************/
+
+  #iframe-item iframe {
+    width: 360px !important;
+    height: 315px !important;
+  }
+
+  #iframe-item-advertising iframe {
+    width: 360px !important;
+    height: 315px !important;
+  } 
+}
+
+
 
 
 
