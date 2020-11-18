@@ -221,6 +221,7 @@
 
   body {
     margin: 0px 0px 0px 0px !important;
+    font-size: 120%;
   }
 
   /* Header */
@@ -229,10 +230,28 @@
   .main_index_image {
   }
 
-  body {
-    font-size: 120%;
+   /*************** Song index **************/
+
+  #iframe-item {
+    padding: 0 0 0 0 !important;
+    margin-bottom: 20px;
+  } 
+
+  #iframe-item iframe {
+    width: 400px !important;
+    height: 315px !important;
   }
 
+  /*************** Advertising index ************/
+
+  #iframe-item-advertising {
+    margin-bottom: 0 !important;
+  }
+
+  #iframe-item-advertising iframe {
+    width: 400px !important;
+    height: 315px !important;
+  } 
 }
 
 
@@ -334,7 +353,7 @@ ion-icon {
 }
 
 #hamburger-sidebar-body {
-  height: 450px;
+  height: 550px;
   padding: 16px 8px;
   background-color: white;
 }
