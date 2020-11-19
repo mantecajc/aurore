@@ -123,7 +123,7 @@
     --ionicon-stroke-width: 10px !important;
   }
 
-  /* Home & studio index */
+  /********** Home & studio index ********/
   .main_index_image {
     width: 90%;
   }
@@ -155,6 +155,7 @@
   /*************** Advertising index ************/
 
   #iframe-item-advertising {
+    margin: 0px 0px 0px 0px !important;
   }
 
   #iframe-item-advertising iframe {
@@ -221,7 +222,32 @@
 
   body {
     margin: 0px 0px 0px 0px !important;
+    font-size: 120%;
   }
+
+  .style_logo {
+    width: 200px;
+    height: 80px;
+  }
+
+  ion-icon {
+    --ionicon-stroke-width: 8px !important;
+  }
+
+  #hamburger-button {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .style-logo-burger {
+    width: 200px !important;
+    height: 80px !important; 
+  }
+
+  #closed-burger {
+    --ionicon-stroke-width: 8px !important;
+  }
+
 
   /* Header */
 
@@ -229,12 +255,109 @@
   .main_index_image {
   }
 
-  body {
-    font-size: 120%;
+   /*************** Song index **************/
+
+  #iframe-item {
+    padding: 0 0 0 0 !important;
+    margin-bottom: 20px;
+  } 
+
+  #iframe-item iframe {
+    width: 400px !important;
+    height: 315px !important;
+  }
+
+  /*************** Advertising index ************/
+
+  #iframe-item-advertising {
+    margin-bottom: 0 !important;
+  }
+
+  #iframe-item-advertising iframe {
+    width: 400px !important;
+    height: 315px !important;
+  }
+
+/*************** Prev & Next *************/
+
+  .prev-next-wrapper {
+    margin: 20px 10px 0px 10px !important;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+
+/*************** Song & advertising index ************/
+
+  #iframe-item iframe {
+    width: 360px !important;
+    height: 315px !important;
+  }
+
+  #iframe-item-advertising iframe {
+    width: 360px !important;
+    height: 315px !important;
+  } 
+
+/*************** Prev & Next *************/
+
+  .prev-next-wrapper {
+    margin: 20px 10px 0px 10px !important;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+
+
+
+  /************* Header *************/
+
+  .style_logo {
+    width: 200px;
+    height: 80px;
+  }
+
+  ion-icon {
+    --ionicon-stroke-width: 8px !important;
+  }
+
+  #hamburger-button {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .style-logo-burger {
+    width: 200px !important;
+    height: 80px !important; 
+  }
+
+  #closed-burger {
+    
+    --ionicon-stroke-width: 8px !important;
+  }
+
+
+
+  /************** Show page ***************/
+
+  #iframe-item iframe {
+    width: 310px !important;
+    height: 280px !important;
+  }
+
+  #iframe-item-advertising iframe {
+    width: 310px !important;
+    height: 280px !important;
+  }
+
+  /*************** Prev & Next *************/
+
+  .prev-next-wrapper {
+    margin: 20px 10px 0px 10px !important;
   }
 
 }
-
 
 
 
@@ -317,6 +440,14 @@ ion-icon {
   display: block;
 }
 
+#hamburger-sidebar {
+  overflow: scroll;
+}
+
+#hamburger-overlay {
+  display: none !important;
+}
+
 #hamburger-sidebar-header {
   background: white;
   height: 180px;
@@ -326,7 +457,7 @@ ion-icon {
 }
 
 #hamburger-sidebar-body {
-  height: 1500px;
+  height: 550px;
   padding: 16px 8px;
   background-color: white;
 }

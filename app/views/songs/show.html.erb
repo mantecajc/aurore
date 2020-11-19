@@ -22,18 +22,18 @@
 <div class="prev-next-wrapper">
   <div class="prev">
     <% if @song.previous %>
-      <%= link_to @song.previous, :class => "pn-link", :action => 'go' do %>
-        <i class="fas fa-chevron-left"></i>
-        <%= @song.previous.title %>
+      <%= link_to @song.previous, :class => "pn-link-left", :action => 'go' do %>
+        <div class="arrow-left"><i class="fas fa-chevron-left"></i></div>
+        <div class="left-title"><%= @song.previous.title %></div>
       <% end %>
     <% end %>
   </div>
   
   <div class="next">
     <% if @song.next %>
-      <%= link_to @song.next, :class => "pn-link", :action => 'go' do %>
-        <%= @song.next.title %>
-        <i class="fas fa-chevron-right"></i>
+      <%= link_to @song.next, :class => "pn-link-right", :action => 'go' do %>
+        <div class="arrow-right"><%= @song.next.title %></div>
+        <div class="right-title"><i class="fas fa-chevron-right"></i></div>
       <% end %>
     <% end %>
   </div>
