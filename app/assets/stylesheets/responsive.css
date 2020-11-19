@@ -123,7 +123,7 @@
     --ionicon-stroke-width: 10px !important;
   }
 
-  /* Home & studio index */
+  /********** Home & studio index ********/
   .main_index_image {
     width: 90%;
   }
@@ -155,6 +155,7 @@
   /*************** Advertising index ************/
 
   #iframe-item-advertising {
+    margin: 0px 0px 0px 0px !important;
   }
 
   #iframe-item-advertising iframe {
@@ -224,6 +225,30 @@
     font-size: 120%;
   }
 
+  .style_logo {
+    width: 200px;
+    height: 80px;
+  }
+
+  ion-icon {
+    --ionicon-stroke-width: 8px !important;
+  }
+
+  #hamburger-button {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .style-logo-burger {
+    width: 200px !important;
+    height: 80px !important; 
+  }
+
+  #closed-burger {
+    --ionicon-stroke-width: 8px !important;
+  }
+
+
   /* Header */
 
   /* Home & studio index */
@@ -251,7 +276,13 @@
   #iframe-item-advertising iframe {
     width: 400px !important;
     height: 315px !important;
-  } 
+  }
+
+/*************** Prev & Next *************/
+
+  .prev-next-wrapper {
+    margin: 20px 10px 0px 10px !important;
+  }
 }
 
 
@@ -268,8 +299,65 @@
     width: 360px !important;
     height: 315px !important;
   } 
+
+/*************** Prev & Next *************/
+
+  .prev-next-wrapper {
+    margin: 20px 10px 0px 10px !important;
+  }
 }
 
+@media only screen and (max-width: 370px) {
+
+
+
+  /************* Header *************/
+
+  .style_logo {
+    width: 200px;
+    height: 80px;
+  }
+
+  ion-icon {
+    --ionicon-stroke-width: 8px !important;
+  }
+
+  #hamburger-button {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .style-logo-burger {
+    width: 200px !important;
+    height: 80px !important; 
+  }
+
+  #closed-burger {
+    
+    --ionicon-stroke-width: 8px !important;
+  }
+
+
+
+  /************** Show page ***************/
+
+  #iframe-item iframe {
+    width: 310px !important;
+    height: 280px !important;
+  }
+
+  #iframe-item-advertising iframe {
+    width: 310px !important;
+    height: 280px !important;
+  }
+
+  /*************** Prev & Next *************/
+
+  .prev-next-wrapper {
+    margin: 20px 10px 0px 10px !important;
+  }
+
+}
 
 
 
