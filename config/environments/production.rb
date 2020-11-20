@@ -60,6 +60,24 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "aurore_production"
 
+  # Needed for action_mailer
+  config.action_mailer.delivery_method = :smtp
+
+  # SMTP settings for gmail
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :user_name            => Rails.application.credentials.gmail[:GMAIL_USERNAME],
+    :password             => Rails.application.credentials.gmail[:GMAIL_PASSWORD],
+    :authentication       => "plain",
+    :enable_starttls_auto => true
+  }
+
+  # Needed for Devise
+  config.action_mailer.default_url_options = { :host => 'labelaurore.herokuapp.com' }
+
+  # Already here before to add action_mailer - Javier
+
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.
