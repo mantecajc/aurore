@@ -1,6 +1,5 @@
 .header {
   display: flex;
-  background-color: ;
   height: 180px;
   align-items: center;
   z-index: 30;
@@ -10,7 +9,6 @@
 
 .logo-box {
   display: flex;
-  background: ;
   width: 32%;
   padding-left: 25px;
 }
@@ -28,7 +26,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background: ;
   margin-bottom: 18px;
 }
 
