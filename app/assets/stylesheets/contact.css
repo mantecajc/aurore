@@ -20,7 +20,6 @@
 }
 
 .contact-details {
-  background: ;
   display: flex;
   flex-direction: column;
   margin: 0 0 0 30px;
@@ -87,35 +86,20 @@
 .text-item {
   height: 30px;
   width: 100%;
-  /* width: 78% */
   background-color: #EEEEEE;
   border: none;
   margin-top: 5px;
   padding-left: 10px;
-  /* solid 1px grey */
-}
-
-.text-item::placeholder {
-  
-}
-
-.message-item {
 }
 
 .text-message-item {
   height: 200px;
   width: 100%;
-  /* width: 78%; */
   background-color: #EEEEEE;
   border: none;
   margin-top: 5px;
   padding-top: 10px;
   padding-left: 10px;
-  /* solid 1px grey */
-}
-
-.text-message-item::placeholder {
-
 }
 
 .submit-item {
@@ -149,33 +133,27 @@
 
 .expertise-detail h1 {
   display: flex;
-  justify-content: ;
 }
 
 .expertise-detail h5 {
   display: flex;
-  justify-content: ;
 }
 
 
 .email-detail p {
   display: flex;
-  justify-content: ;
 }
 
 .email-detail h5 {
   display: flex;
-  justify-content: ;
 }
 
 .phone-detail p {
   display: flex;
-  justify-content: ;
 }
 
 .phone-detail h5 {
   display: flex;
-  justify-content: ;
 }
 
 
