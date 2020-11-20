@@ -7,13 +7,14 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-# Needed for Heroku
-config.assets.initialize_on_precompile = false 
+
 
 
 module Aurore
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    # Needed for Heroku
+    config.assets.initialize_on_precompile = false 
     config.load_defaults 6.0
     config.assets.paths << Rails.root.join("app", "assets", "img")
 
