@@ -62,7 +62,18 @@ Rails.application.configure do
 
 
   # Needed for Devise
-  config.action_mailer.default_url_options = { :host => 'labelaurore.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'https://labelaurore.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+     :address => 'smtp.sendgrid.com',
+     :port => '587',
+     :authentication => :plain,
+     :user_name => ENV['SENGRID_USERNAME'],
+     :password => ENV['SENGRID_PASSWORD'],
+     :domain => 'heroku.com',
+     :enable_starttls_auto => true 
+  }
+
 
   #These settings are for the sending out email for active admin and consequently the devise mailer
 
