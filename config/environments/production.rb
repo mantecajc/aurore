@@ -66,15 +66,15 @@ Rails.application.configure do
 
   #These settings are for the sending out email for active admin and consequently the devise mailer
 
-   config.action_mailer.delivery_method = :smtp
-   config.action_mailer.smtp_settings = {
-     address: 'smtp.mail.com',
-     port: 587,
-     domain: 'labelaurore.herokuapp.com',
-     user_name: Rails.application.credentials.gmail[:GMAIL_USERNAME],
-     password: Rails.application.credentials.gmail[:GMAIL_PASSWORD],
-     authentication: 'plain',
-     enable_starttls_auto: true }
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #   address: 'smtp.mail.com',
+  #   port: 587,
+  #   domain: 'labelaurore.herokuapp.com',
+  #   user_name: Rails.application.credentials.gmail[:GMAIL_USERNAME],
+  #   password: Rails.application.credentials.gmail[:GMAIL_PASSWORD],
+  #   authentication: 'plain',
+  #   enable_starttls_auto: true }
 
   # Already here before to add action_mailer - Javier
 
