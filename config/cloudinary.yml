@@ -1,0 +1,20 @@
+development:
+  cloud_name: duj4c9ism
+  api_key: '776842438441149'
+  api_secret: 83tMemTwzp0Y962xEBBnccxPJTQ
+  enhance_image_tag: true
+  static_file_support: false
+
+production:
+  cloud_name: duj4c9ism
+  api_key: '776842438441149'
+  api_secret: 83tMemTwzp0Y962xEBBnccxPJTQ
+  enhance_image_tag: true
+  static_file_support: true
+  
+test:
+  cloud_name: duj4c9ism
+  api_key: '776842438441149'
+  api_secret: 83tMemTwzp0Y962xEBBnccxPJTQ
+  enhance_image_tag: true
+  static_file_support: false

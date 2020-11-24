@@ -76,3 +76,6 @@ gem 'devise', '~> 4.7', '>= 4.7.3'
 
 # Needed for sendgrid
 gem 'sendgrid-ruby'
+
+# Needed for Cloudinary
+gem 'cloudinary', '~> 1.2', '>= 1.2.2'

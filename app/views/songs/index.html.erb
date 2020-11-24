@@ -4,12 +4,11 @@
 <div class="post-items-wrapper">
   <% @songs.each do |song| %>
 
-    <div class="post-item-wrapper">
-      <% if song.image.attached? %>
-        <div class="post-img"><%=link_to image_tag(song.image, style: 'width: 89%'), song %></div>
-      <% end %>
-      <h2 class="subtitle-box"><%= link_to song.title, song, :class => "subtitle" %></h2>
-    </div>
+  <div class="post-item-wrapper">
+    <% if song.image.attached? %>
+      <div class="post-img"><%=link_to image_tag(url_for(song.image), style: 'width: 89%'), song %></div>
+    <% end %>
+    <h2 class="subtitle-box"><%= link_to song.title, song, :class => "subtitle" %></h2>
+  </div>
   <% end %>
 </div>
-
