@@ -1,0 +1,61 @@
+/**************** Music Production *****************/
+
+.new-form-wrap {
+  font-weight: 400;
+  font-size: 0.9rem;
+  width: 60%;
+}
+
+.back-wrap {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.back-label {
+  margin-bottom: 5px;
+}
+
+.back-field {
+  border: solid 1px #D3D3D3;
+  border-radius: 0.2rem;
+}
+
+#title-back-field {
+  height: 25px;
+}
+
+#description-back-field {
+  height: 100px;
+}
+
+#iframe-back-field {
+  height: 25px;
+  width: 50%;
+}
+
+#save-cancel-wrap {
+  flex-direction: row-reverse;
+}
+
+/************* Buttons **********/
+
+input::-webkit-file-upload-button {
+  background: white;
+  border: 1px solid #D3D3D3;
+  border-radius: 0.4rem;
+  content: "Choose a file" !important;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 8px 10px 8px 10px;
+  transition: all ease 0.5s;
+  text-rendering: 'hello';
+}
+
+input::-webkit-file-upload-button:hover {
+  border: 1px solid black;
+  background: #EFEFEF;
+}
+
+

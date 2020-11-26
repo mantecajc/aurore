@@ -12,38 +12,36 @@
       </div>
     <% end %>
 
-    <p>
-      <%= f.label :title, 'Title *', :class => "label-new-form" %>
-      <%= f.text_field :title, :class => "new-item-field" %>
-    </p>
+    <div class="back-wrap">
+      <%= f.label :title, :class => "back-label" %>
+      <%= f.text_field :title, :class => "back-field", :id => "title-back-field" %>
+    </div>
 
-    <p>
-      <%= f.label :description, :class => "label-new-form" %>
-      <%= f.rich_text_area :description, :class => "new-item-field" %>
-    </p>
+    <div class="back-wrap">
+      <%= f.label :description, :class => "back-label" %>
+      <%= f.rich_text_area :description, :class => "back-field", :id => "description-back-field" %>
+    </div>
 
-    <p>
+    <div class="back-wrap">
       <% if @song.image.attached? %>
         <%= image_tag @song.image, style: "width: 200px; display: block" %>
       <% end %>
-      <%= f.label :image, 'Image *', :class => "label-new-form" %>
+      <%= f.label :image, :class => "back-label" %>
       <%= f.file_field :image, direct_upload: true %>
-    </p>
+    </div>
 
-    <p>
+    <div class="back-wrap">
       <%= f.fields_for :iframes do |f| %>
           <%= render 'iframe_fields', f: f %>
       <% end %>
       <%= link_to_add_fields "Add another iframe", f, :iframes %>
-    </p>
+    </div>
 
-
-    <p>
+    <div class="back-wrap" id="save-cancel-wrap">
       <%= f.submit "Save" %>
-    </p>
   <% end %>
-
-  <%= link_to 'Cancel', songs_path %>
+      <%= link_to 'Cancel', songs_path %>
+    </div>
 </div>
 
 <script>
