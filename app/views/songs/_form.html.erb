@@ -30,7 +30,7 @@
       <%= f.file_field :image, direct_upload: true %>
     </div>
 
-    <div class="back-wrap">
+    <div class="back-wrap" id="iframe-wrap">
       <%= f.fields_for :iframes do |f| %>
           <%= render 'iframe_fields', f: f %>
       <% end %>

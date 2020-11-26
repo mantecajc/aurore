@@ -1,6 +1,7 @@
 <p class="iframe_links">
-  <%= f.label :iframe_url, "Iframe code: ", :class => "back-label" %>
+  <%= f.label :iframe_url, "Video iframe code: " %>
   <%= f.text_field :iframe_url, :class => "back-field", :id => "iframe-back-field" %>
   <%= f.hidden_field :_destroy %>
-  <i class="fas fa-times-circle"><%= link_to "Remove", '#', class: "remove_fields" %></i>
+  <%= link_to (fa_icon "times-circle"), '#', class: "remove_fields" %>
 </p>
+
