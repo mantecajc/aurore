@@ -1,48 +1,50 @@
-<%= form_for @song do |f| %>
+<div class="new-form-wrap">
+  <%= form_for @song do |f| %>
 
-  <% if @song.errors.any? %>
-    <div>
-      <h2><%= pluralize(@song.errors.count, "error") %> prohibited this post from being saved:</h2>
-      <ul>
-        <% @song.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
+    <% if @song.errors.any? %>
+      <div>
+        <h2><%= pluralize(@song.errors.count, "error") %> prohibited this post from being saved:</h2>
+        <ul>
+          <% @song.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <p>
+      <%= f.label :title, 'Title *', :class => "label-new-form" %>
+      <%= f.text_field :title, :class => "new-item-field" %>
+    </p>
+
+    <p>
+      <%= f.label :description, :class => "label-new-form" %>
+      <%= f.rich_text_area :description, :class => "new-item-field" %>
+    </p>
+
+    <p>
+      <% if @song.image.attached? %>
+        <%= image_tag @song.image, style: "width: 200px; display: block" %>
+      <% end %>
+      <%= f.label :image, 'Image *', :class => "label-new-form" %>
+      <%= f.file_field :image, direct_upload: true %>
+    </p>
+
+    <p>
+      <%= f.fields_for :iframes do |f| %>
+          <%= render 'iframe_fields', f: f %>
+      <% end %>
+      <%= link_to_add_fields "Add another iframe", f, :iframes %>
+    </p>
+
+
+    <p>
+      <%= f.submit "Save" %>
+    </p>
   <% end %>
 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
-
-  <p>
-    <%= f.label :description%><br>
-    <%= f.rich_text_area :description %>
-  </p>
-
-  <p>
-    <% if @song.image.attached? %>
-      <%= image_tag @song.image, style: "width: 200px; display: block" %>
-    <% end %>
-    <%= f.label :image %><br>
-    <%= f.file_field :image, direct_upload: true %>
-  </p>
-
-  <p>
-    <%= f.fields_for :iframes do |f| %>
-        <%= render 'iframe_fields', f: f %>
-    <% end %>
-    <%= link_to_add_fields "Add another iframe", f, :iframes %>
-  </p>
-
-
-  <p>
-    <%= f.submit "Save" %>
-  </p>
-<% end %>
-
-<%= link_to 'Cancel', songs_path %>
+  <%= link_to 'Cancel', songs_path %>
+</div>
 
 <script>
 

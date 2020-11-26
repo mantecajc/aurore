@@ -1,0 +1,15 @@
+.new-form-wrap {
+  font-weight: 400;
+  font-size: 0.9rem;
+  width: 50%;
+}
+
+.label-new-form {
+  
+}
+
+.new-item-field {
+  background-color: #EEEEEE;
+  border: none;
+  border-radius: 0.2rem;
+}
