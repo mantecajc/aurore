@@ -38,9 +38,9 @@
     </div>
 
     <div class="back-wrap" id="save-cancel-wrap">
-      <%= f.submit "Save" %>
+      <%= f.submit "Save", :class => "create-btn" %>
   <% end %>
-      <%= link_to 'Cancel', songs_path %>
+      <%= link_to 'Cancel', songs_path, :class => "cancel-btn" %>
     </div>
 </div>
 

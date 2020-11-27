@@ -1,9 +1,23 @@
 /**************** Music Production *****************/
 
+.create-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.create-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .new-form-wrap {
   font-weight: 400;
   font-size: 0.9rem;
-  width: 60%;
+  margin: 0px 30px 0 30px;
+  width: 700px;
 }
 
 .back-wrap {
@@ -19,6 +33,7 @@
 .back-field {
   border: solid 1px #D3D3D3;
   border-radius: 0.2rem;
+  padding-left: 8px;
 }
 
 #title-back-field {
@@ -34,43 +49,49 @@
 }
 
 #save-cancel-wrap {
+  margin-top: 15px;
   flex-direction: row-reverse;
 }
 
 #iframe-wrap {
   margin-bottom: 0px !important;
+  margin-top: 15px;
 }
+
 
 /************* Buttons **********/
 
+input#song_image {
+  width: 270px;
+}
 input::-webkit-file-upload-button {
   background: white;
   border: 1px solid #D3D3D3;
   border-radius: 0.4rem;
+  color: #505050;
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.80rem;
   font-weight: 600;
   margin-right: 10px;
   padding: 8px 10px 8px 10px;
-  transition: all ease 0.5s;
+  transition: all ease 0.3s;
 }
 
 input::-webkit-file-upload-button:hover {
-  border: 1px solid black;
+  border: 1px solid #505050;
   background: #EFEFEF;
 }
 
 i.fa.fa-times-circle {
   color: red;
   font-size: 1.1rem;
-  transition: all ease 0.4s;
 }
 
 a.add_fields {
   border: 1px solid #D3D3D3;
   border-radius: 0.4rem;
-  color: black;
+  color: #505050;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -78,12 +99,48 @@ a.add_fields {
   font-size: 0.80rem;
   padding: 8px 5px 8px 5px;
   text-decoration: none;
-  transition: all ease 0.5s;
+  transition: all ease 0.3s;
   max-width: 130px;
 }
 
 a.add_fields:hover {
-  border: 1px solid black;
+  border: 1px solid #505050;
   background: #EFEFEF;
+}
+
+.create-btn {
+  background: #0286B9;
+  border: 1px solid #0286B9;
+  border-radius: 0.4rem;
+  color: white;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.80rem;
+  font-weight: 600;
+  padding: 6px 10px 6px 10px;
+  transition: all ease 0.3s;
+}
+
+.create-btn:hover {
+  background: ;
+  filter: brightness(125%);
+}
+
+.cancel-btn {
+  border: 1px solid #D3D3D3;
+  border-radius: 0.4rem;
+  color: #505050;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.80rem;
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 6px 10px 6px 10px;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+.cancel-btn:hover {
+  border: 1px solid #D3D3D3;
+  background: #D3D3D3;
 }
 
