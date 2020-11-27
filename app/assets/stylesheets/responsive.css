@@ -58,6 +58,10 @@
   #hamburger-sidebar {
     display: block;
   }
+
+  .new-form-wrap {
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -88,6 +92,10 @@
     width: 660px !important;
     height: 415px !important;
   } 
+
+  .new-form-wrap {
+    width: 70%;
+  }
 }
 
 
@@ -211,6 +219,10 @@
 
   .phone-detail h5 {
     justify-content: center;
+  }
+
+  .new-form-wrap {
+    width: 80%;
   }
 }
 
