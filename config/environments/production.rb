@@ -67,15 +67,16 @@ Rails.application.configure do
 
 
   config.action_mailer.delivery_method = :smtp
-  ActionMailer::Base.smtp_settings = {
-     :address => 'smtp.sendgrid.com',
-     :port => '587',
-     :authentication => :plain,
-     :user_name => ENV['GMAIL_USERNAME'],
-     :password => ENV['GMAIL_PASSWORD'],
-     :domain => 'herokuapp.com',
-     :enable_starttls_auto => true 
+  config.action_mailer.smtp_settings = {
+   :address              => "smtp.gmail.com",
+   :port                 => 587,
+   :user_name            => ENV['gmail_username'],
+   :password             => ENV['gmail_password'],
+   :authentication       => "plain",
+  :enable_starttls_auto => true
   }
+
+
 
 
   #These settings are for the sending out email for active admin and consequently the devise mailer
