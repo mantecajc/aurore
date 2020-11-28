@@ -64,6 +64,7 @@
 input#song_image {
   width: 270px;
 }
+
 input::-webkit-file-upload-button {
   background: white;
   border: 1px solid #D3D3D3;
@@ -122,7 +123,6 @@ a.add_fields:hover {
 }
 
 .create-btn:hover {
-  background: ;
   filter: brightness(125%);
 }
 
