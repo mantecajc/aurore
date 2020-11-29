@@ -1,4 +1,3 @@
-
 @media only screen and (max-width: 1289px) {
 
   /* Header */
@@ -9,12 +8,12 @@
   .navbar {
     width: 68%;
   }
+
 }
 
 
 
 @media only screen and (max-width: 1147px) {
-
 
   /* Header */
   .navbar {
@@ -362,7 +361,21 @@
 }
 
 
+/************** Responsive for tablet ****************/
 
+@media only screen and (min-height: 730px) {
+  #hamburger-sidebar-body {
+    height: 820px !important;
+    padding-top: 140px !important;
+  }
+}
+
+@media only screen and (min-height: 930px) {
+  #hamburger-sidebar-body {
+    height: 920px !important;
+    padding-top: 200px !important;
+  }
+}
 
 
 /* Burger menu */
