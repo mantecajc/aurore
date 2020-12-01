@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1889px) {
    #iframe-item iframe {
     width: 700px !important;
-    max-height: 435px;
+    max-height: 435px !important;
   }
 }
 
@@ -137,7 +137,7 @@
   } 
   #iframe-item iframe {
     width: 460px !important;
-    max-height: 315px;
+    max-height: 315px !important;
   }
 
   /*************** Advertising index ************/
@@ -247,7 +247,7 @@
 
   #iframe-item iframe {
     width: 400px !important;
-    max-height: 315px;
+    max-height: 315px !important;
   }
 
   /*************** Advertising index ************/
@@ -275,7 +275,7 @@
 
   #iframe-item iframe {
     width: 360px !important;
-    max-height: 315px;
+    max-height: 315px !important;
   }
 
   #iframe-item-advertising iframe {
@@ -326,7 +326,7 @@
 
   #iframe-item iframe {
     width: 310px !important;
-    max-height: 280px;
+    max-height: 280px !important;
   }
 
   #iframe-item-advertising iframe {
