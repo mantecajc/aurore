@@ -63,7 +63,7 @@ Rails.application.configure do
 
 
   # Needed for Devise
-  config.action_mailer.default_url_options = { :host => 'https://www.labelaurore.fr' }
+  config.action_mailer.default_url_options = { :host => 'ssl0.ovh.net' }
 
 
   config.action_mailer.delivery_method = :smtp
@@ -73,7 +73,7 @@ Rails.application.configure do
    :user_name            => ENV['GMAIL_USERNAME'],
    :password             => ENV['GMAIL_PASSWORD'],
    :authentication       => "plain",
-  :enable_starttls_auto => true
+   :enable_starttls_auto => true
   }
 
 
