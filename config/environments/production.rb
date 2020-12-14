@@ -76,9 +76,6 @@ Rails.application.configure do
    :enable_starttls_auto => true
   }
 
-
-
-
   #These settings are for the sending out email for active admin and consequently the devise mailer
 
   # config.action_mailer.delivery_method = :smtp
