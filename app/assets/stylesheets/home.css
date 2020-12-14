@@ -14,11 +14,10 @@
 }
 
 .small_description {
-  background: lightgreen;
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 80%;
+  width: 50%;
   margin-top: 15px;
   margin-bottom: 35px;
   font-weight: 400;
@@ -35,9 +34,8 @@
   width: 50%;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 22pt !important;
 }
 
-.sub_description_index {
-
+.trix-content {
+  line-height: 22pt;
 }

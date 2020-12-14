@@ -4,14 +4,16 @@
     <%= @homes.first.main_description %>
   </div>
 
-  <%= image_tag ("l_aurore_home_photo.jpg"), :class => "main_index_image" %>
+  <% if @homes.first.image.attached? %>
+    <%= image_tag url_for(@homes.first.image), :class => "main_index_image" %>
+  <% end %>
 
   <div class="sub_description_wrap">
     <%= @homes.first.sub_description %>
   </div>
-  <!-- if user_signed_in? %> -->
+  <!--  if user_signed_in? %> -->
     <div class="command-wrapper">
       <%= link_to "Edit", edit_home_path(1), :class => "button-item" %>
     </div>
-  <!-- end %> -->
+  <!--  end %> -->
 </div>
