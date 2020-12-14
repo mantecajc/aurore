@@ -35,3 +35,12 @@ footer {
   font-size: 0.8rem;
 }
 
+.made_by {
+  text-decoration: none;
+  color: black;
+  transition: all ease 0.5s;
+}
+
+.mady_by:hover {
+  color: red;
+}
