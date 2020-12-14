@@ -1,17 +1,17 @@
 <div class="index_home_studio">
   <h1 class="title">L'AURORE</h1>
   <div class="small_description">
-    <p>“L'Aurore” is a French name for “The Dawn”.</p>
-    <p>It’s a music production and post sound production studio.</p>
-    <p>“Take your project from dawn to noon”</p>
+    <%= @homes.first.main_description %>
   </div>
 
   <%= image_tag ("l_aurore_home_photo.jpg"), :class => "main_index_image" %>
 
-  <p class="long_description">
-    Its founder Geoffrey Papin has studied acoustic physics and sound technology followed by a degree at the famous French jazz school “Jazz à Tours”. He is a multi-instrumentalist, composer and producer who worked for Thylacine, Tiger Lion, La Houle..etc. And a sound designer, post sound mixer for advertisings, films, or documentaries. He is also founder of the band “Sisyphes” as a guitarist-singer.
-    <br>
-    <br>
-    Geoffrey Papin is a very adaptive person with a sharp eye for details, using his skills as an artist,  musician, and technician to bring together a fine and global point of view on your sound-requirements. Always curious and keen to discover some new sound fields in a friendly atmosphere, he is a mindful partner in any of your projects.
-  </p>
+  <div class="sub_description_wrap">
+    <%= @homes.first.sub_description %>
+  </div>
+  <!-- if user_signed_in? %> -->
+    <div class="command-wrapper">
+      <%= link_to "Edit", edit_home_path(1), :class => "button-item" %>
+    </div>
+  <!-- end %> -->
 </div>

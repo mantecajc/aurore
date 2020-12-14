@@ -26,7 +26,7 @@ class HomesController < ApplicationController
     @home = Home.find(params[:id])
 
     if @home.update(home_params)
-      redirect_to @home
+      redirect_to root_path
     else
       render 'edit'
     end

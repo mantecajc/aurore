@@ -14,10 +14,12 @@
 }
 
 .small_description {
+  background: lightgreen;
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 80%;
+  margin-top: 15px;
   margin-bottom: 35px;
   font-weight: 400;
   font-size: 1rem;
@@ -28,10 +30,14 @@
   margin-bottom: 55px;
 }
 
-.long_description {
+.sub_description_wrap {
   display: flex;
   width: 50%;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 22pt;
+  line-height: 22pt !important;
+}
+
+.sub_description_index {
+
 }
