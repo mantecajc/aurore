@@ -63,7 +63,7 @@ Rails.application.configure do
 
 
   # Needed for Devise
-  config.action_mailer.default_url_options = { :host => 'https://labelaurore.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'https://www.labelaurore.fr' }
 
 
   config.action_mailer.delivery_method = :smtp
