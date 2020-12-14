@@ -1,5 +1,5 @@
 class HomesController < ApplicationController
-  before_action :authenticate_user!, except: [:index]
+  #before_action :authenticate_user!, except: [:index]
   
   def index
     @homes = Home.all.order("created_at DESC")
