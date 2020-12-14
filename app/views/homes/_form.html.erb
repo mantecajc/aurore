@@ -1,0 +1,48 @@
+<div class="new-form-wrap">
+  <%= form_for @home do |f| %>
+
+    <!-- begin -->
+    <% if @home.errors.any? %>
+      <div>
+        <h2><%= pluralize(@home.errors.count, "error") %> prohibited this post from being saved:</h2>
+        <ul>
+          <% @home.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <!-- end -->
+
+    <!-- first paragraphe -->
+    <div class="back-wrap">
+      <%= f.label :main_description, :class => "back-label" %>
+      <%= f.rich_text_area :main_description, :class => "back-field", :id => "main-description-back-field" %>
+    </div>
+    <!-- end -->
+
+    <!-- image area -->
+    <div class="back-wrap">
+      <% if @home.image.attached? %>
+        <%= image_tag @home.image, style: "width: 200px; display: block" %>
+      <% end %>
+      <%= f.label :image, :class => "back-label" %>
+      <%= f.file_field :image, direct_upload: true %>
+    </div>
+    <!-- end -->
+
+    <!-- second paragraphe -->
+    <div class="back-wrap">
+      <%= f.label :sub_description, :class => "back-label" %>
+      <%= f.rich_text_area :sub_description, :class => "back-field", :id => "sub-description-back-field" %>
+    </div>
+    <!-- end -->
+
+    <!-- buttons wrap -->
+    <div class="back-wrap" id="save-cancel-wrap">
+      <%= f.submit "Save", :class => "create-btn" %>
+  <% end %>
+      <%= link_to 'Cancel', root_path, :class => "cancel-btn" %>
+    </div>
+    <!-- end -->
+</div>

@@ -28,10 +28,13 @@
   }
 
   /* Home & studio index */
+  .small_description {
+    width: 60%;
+  }
   .main_index_image {
     width: 60%;
   }
-  .long_description {
+  .sub_description_wrap {
     width: 60%;
   }
   .small_description_studio {
@@ -117,10 +120,13 @@
   }
   
   /********** Home & studio index ********/
+  .small_description {
+    width: 90%;
+  }
   .main_index_image {
     width: 90%;
   }
-  .long_description {
+  .sub_description_wrap {
     width: 90%;
   }
   .small_description_studio {
