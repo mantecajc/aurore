@@ -13,7 +13,7 @@ class HomesController < ApplicationController
     @home = Home.new(home_params)
 
     @home.save
-    redirect_to @home
+    redirect_to root_path
   end
 
   def show

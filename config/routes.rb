@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'homes#index'
   resources :homes
-  resources :studios
+  resources :studios, only: [:index, :new, :create, :edit, :update]
   resources :songs
  
   get '/sound-designs' => 'sound_designs#index'
