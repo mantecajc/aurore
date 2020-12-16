@@ -1,12 +1,15 @@
 <div class="index_home_studio">
   <h1 class="title">Studio L'Aurore</h1>
-  <div class="small_description_studio">
-    <p>A simple and minimal set up with all what you need to express your creativity.</p>
-
-    <p>A mix of old analog instruments and preamps with the simplicity of a digital mixing process.</p>
-
-    <p>As an acoustician I’m really picky with the sound of the room, adding to a precise monitoring system and a good pair of ears, L’Aurore delivers some polish mixes matching the high quality standards for any of your projects.</p>
+  <div class="small_description">
+    <%= @studios.first.main_description %>
   </div>
+  <% if @studios.first.image.attached? %>
+    <%= image_tag url_for(@studios.first.image), :class => "main_index_image" %>
+  <% end %>
 
-  <%= image_tag ("studio.jpg"), :class => "main_index_image" %>
+  <% if user_signed_in? %>
+    <div class="command-wrapper">
+      <%= link_to "Edit", edit_studio_path(1), :class => "button-item" %>
+    </div>
+  <% end %>
 </div>

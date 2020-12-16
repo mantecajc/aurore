@@ -1,7 +1,8 @@
 class StudiosController < ApplicationController
   before_action :authenticate_user!, except: [:index]
 
-  def index  
+  def index
+    @studios = Studio.all.order("created_at DESC")
   end
 
   def new

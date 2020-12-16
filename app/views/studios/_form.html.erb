@@ -1,0 +1,37 @@
+<div class="new-form-wrap">
+  <%= form_for @studio do |f| %>
+    <!-- begin -->
+    <% if @studio.errors.any? %>
+      <div>
+        <h2><%= pluralize(@studio.errors.count, "error") %> prohibited this post from being saved:</h2>
+        <ul>
+          <% @studio.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <!-- end -->
+    <!-- main description -->
+    <div class="back-wrap">
+      <%= f.label :main_description, :class => "back-label" %>
+      <%= f.rich_text_area :main_description, :class => "back-field", :id => "main-description-back-field" %>
+    </div>
+    <!-- end -->
+    <!-- image wrap -->
+    <div class="back-wrap">
+      <% if @studio.image.attached? %>
+        <%= image_tag @studio.image, style: "width: 200px; display: block" %>
+      <% end %>
+      <%= f.label :image, :class => "back-label" %>
+      <%= f.file_field :image, direct_upload: true %>
+    </div>
+    <!-- end -->
+    <!-- buttons wrap -->
+    <div class="back-wrap" id="save-cancel-wrap">
+      <%= f.submit "Save", :class => "create-btn" %>
+  <% end %>
+      <%= link_to 'Cancel', studios_path, :class => "cancel-btn" %>
+    </div>
+    <!-- end -->
+</div>
