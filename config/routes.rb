@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'homes#index'
   resources :homes
-
+  resources :studios, only: [:index, :new, :create, :edit, :update]
   resources :songs
  
   get '/sound-designs' => 'sound_designs#index'
@@ -13,8 +13,6 @@ Rails.application.routes.draw do
   patch '/sound-designs/:id' => 'sound_designs#update'
   put '/sound-designs/:id' => 'sound_designs#update'
   delete '/sound-designs/:id' => 'sound_designs#destroy'
-
-  get "studio" => "studio#index" 
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]

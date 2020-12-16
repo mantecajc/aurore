@@ -1,0 +1,15 @@
+<div class="index_home_studio">
+  <h1 class="title">Studio L'Aurore</h1>
+  <div class="small_description">
+    <%= @studios.first.main_description %>
+  </div>
+  <% if @studios.first.image.attached? %>
+    <%= image_tag url_for(@studios.first.image), :class => "main_index_image" %>
+  <% end %>
+
+  <% if user_signed_in? %>
+    <div class="command-wrapper">
+      <%= link_to "Edit", edit_studio_path(1), :class => "button-item" %>
+    </div>
+  <% end %>
+</div>
